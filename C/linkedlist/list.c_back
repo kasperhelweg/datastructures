@@ -1,0 +1,95 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "list.h"
+
+/*
+ * internal helper functions
+ *
+ ****************************/
+Listnode* mallocNode();
+/****************************/
+
+void append( Listnode** head, Data elem )
+{
+  /* 
+     malloc space for new node put data in node.
+     make the next->NULL since the node is supposed to be appended to the list.
+  */
+  Listnode* new_node = mallocNode( );
+  new_node->content = elem; new_node->next = NULL;
+ 
+  /*
+    follow pointers to the end. insert new node.
+  */  
+  while ( *head ) {
+    head = &(*head)->next;
+  }
+
+  *head = new_node;
+}
+
+void prepend( Listnode** head, Data elem )
+{
+  Listnode* new_node =  mallocNode( );  
+  new_node->content = elem; new_node->next = *head;
+  *head = new_node;
+}
+
+void remv( Listnode** head, int (*match)( Data ))
+{
+  Listnode* curr, ** last;
+  
+  if ( *head == NULL ) return;
+  last = head;
+  curr = *head;
+  
+  while( curr != NULL && !( match( curr->content ))) {
+    last = &( curr->next );
+    curr = curr->next;
+  }
+  
+  if ( curr == NULL ) return;
+  *last = curr->next;
+  free( curr );
+}
+										
+Data head( Listnode* head )
+{
+  return head->content;
+}
+
+int length( Listnode* head )
+{  
+  int length = 0;
+
+  while ( head ){
+    head = head->next;
+    ++length;
+  }  
+  return length;
+}
+
+void printList( Listnode* head )
+{
+  printf( "List is: " );
+  while ( head ){
+    printf( "%d ", *(int*)(head->content) );
+    head = head->next;
+  }  
+}
+
+/*
+ * implementation internals
+ *
+ ****************************/
+
+Listnode* mallocNode( ) 
+{
+  Listnode* new_node = ( Listnode* ) malloc( sizeof( Listnode ));
+  if ( new_node == NULL ) {
+    printf( "Out of memory.\n" );
+    exit( EXIT_FAILURE );
+  } 
+ 
+  return new_node;
+}
