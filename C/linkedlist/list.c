@@ -21,7 +21,7 @@ void append( Listnode** head, Data elem )
   new_node->content = elem; new_node->next = NULL;
  
   /* follow pointers to the end. */ 
-  while ( *head ) {
+  while ( *head != NULL ) {
     head = &(*head)->next;
   } 
 
@@ -76,7 +76,7 @@ int length( Listnode* head )
   int length = 0;
 
   /* count the length */
-  while ( head ) {
+  while ( head != NULL ) {
     head = head->next;
     ++length;
   }  
