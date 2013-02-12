@@ -17,11 +17,10 @@ clean:
 	rm -f *.o
 	rm -f qtest.out
 
-default:
-	qtest
-
-all: 
-	qtest
+all:	qtest
 
 totalitarian:
 	splint -strict -preproc queue.c
+
+default:
+	qtest

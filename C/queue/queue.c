@@ -15,20 +15,17 @@ static QNode* mallocNode( void );
 /* return number of elements in queue */
 int length( QNode* queue )
 {
-  /* assume queue of length >= 1 */
-  int length = 1;
+  /* assume queue of length = 0 */
+  int length = 0;
   
-  if( queue == NULL ) { 
-    /* assumption is false, so correct it */
-    --length; 
-  } else {
-    /* we need a way of knowing if we are done traversing the queue */
+  if( queue != NULL ) { 
+    /* pointer to walk the queue */
     QNode* current = queue->link; 
     /* traverse queue and increment length */
-    while( current != queue ) {
-      current = current->link;
+    do {
       ++length;
-    }
+      current = current->link;
+    } while( current != queue->link );
   }
   return length;
 }
@@ -90,13 +87,11 @@ int sum( QNode* queue, int (*val)( Data ) )
   if( queue != NULL ) {
     /* start at head and walk queue, summing data elements */
     QNode* current = queue->link;
-
-    while( current != queue ) {
+    
+    do {
       sum += (*val)(current->content);
       current = current->link;
-    }
-    /* remember the tail element */
-    sum += (*val)(queue->content);
+    } while( current != queue->link );  
   }
   return sum;
 }
