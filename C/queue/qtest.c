@@ -115,7 +115,7 @@ void deQueue( QNode** queue, int qe )
     if( data ) {
       printf( "data: %d\n", *(int*)data);
       free( data );
-      data = NULL;
+      data = NULL; 
       ++i;
     } else {
       printf("Empty queue\n");

@@ -6,7 +6,7 @@
  * internal prototypes
  ****************************/
 
-QNode* mallocNode( void );
+static QNode* mallocNode( void );
 
 /*
  * implementation
@@ -18,7 +18,7 @@ int length( QNode* queue )
   /* assume queue of length >= 1 */
   int length = 1;
   
-  if( !queue ) { 
+  if( queue == NULL ) { 
     /* assumption is false, so correct it */
     --length; 
   } else {
@@ -40,7 +40,7 @@ void enqueue( QNode** queue, Data el )
   QNode* new_node = mallocNode( );
   
   /* set up new queue structure */
-  if( !(*queue) ) {
+  if( *queue == NULL ) {
     /* this is the first element so it should point to itself */
     new_node->link = new_node;
   } else {
@@ -59,17 +59,15 @@ Data dequeue( QNode** queue )
 { 
   Data data = NULL;
  
-  if( *queue ) {
+  if( *queue != NULL ) {
     QNode* node_to_dequeue = (*queue)->link;
     data = node_to_dequeue->content;
-    
     if( *queue == node_to_dequeue ) {
       *queue = NULL;
     } else {
       (*queue)->link = node_to_dequeue->link;
       node_to_dequeue->link = NULL;
     }
-
     free( node_to_dequeue );
     node_to_dequeue = NULL;
   } 
@@ -84,14 +82,14 @@ int sum( QNode* queue, int (*val)( Data ) )
 {
   int sum = 0;
   
-  if( queue ) {
-    /* start at head and walk queue, adding data elements */
+  if( queue != NULL ) {
+    /* start at head and walk queue, summing data elements */
     QNode* current = queue->link;
     while( current != queue ) {
       sum += (*val)(current->content);
       current = current->link;
     }
-    /* remember the tail element*/
+    /* remember the tail element */
     sum += (*val)(queue->content);
   }
   return sum;
@@ -100,7 +98,8 @@ int sum( QNode* queue, int (*val)( Data ) )
 /*
  * implementation internals
  ****************************/
-/* call malloc and cast to type Listnode* */
+
+/* call malloc and cast to type QNode* */
 QNode* mallocNode( void ) 
 { 
   QNode* new_node = (QNode*)malloc( sizeof( QNode ) );
@@ -109,7 +108,6 @@ QNode* mallocNode( void )
     printf ( "Out of memory.\n" );
     exit ( EXIT_FAILURE );
   } 
- 
   return new_node;
 }
 
