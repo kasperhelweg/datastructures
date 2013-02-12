@@ -60,14 +60,19 @@ Data dequeue( QNode** queue )
   Data data = NULL;
  
   if( *queue != NULL ) {
+    /* pointer to the node that should be removed. extract data */
     QNode* node_to_dequeue = (*queue)->link;
     data = node_to_dequeue->content;
+    /* set up new queue structure */
     if( *queue == node_to_dequeue ) {
+      /* only one element in queue. queue should be set to empty */
       *queue = NULL;
     } else {
+      /* completely detach node from queue */
       (*queue)->link = node_to_dequeue->link;
       node_to_dequeue->link = NULL;
     }
+    /* free the memory */
     free( node_to_dequeue );
     node_to_dequeue = NULL;
   } 
@@ -85,6 +90,7 @@ int sum( QNode* queue, int (*val)( Data ) )
   if( queue != NULL ) {
     /* start at head and walk queue, summing data elements */
     QNode* current = queue->link;
+
     while( current != queue ) {
       sum += (*val)(current->content);
       current = current->link;

@@ -5,7 +5,7 @@ typedef void* Data;
 
 typedef struct QNode_ {
   Data content;
-  struct QNode_ *link;
+  struct QNode_* link;
 } QNode;
 
 /* return number of elements in queue */
