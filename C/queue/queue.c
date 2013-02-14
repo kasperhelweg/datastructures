@@ -105,7 +105,7 @@ QNode* mallocNode( void )
 { 
   QNode* new_node = (QNode*)malloc( sizeof( QNode ) );
 
-  if ( !new_node ) {
+  if ( new_node == NULL ) {
     printf ( "Out of memory.\n" );
     exit ( EXIT_FAILURE );
   } 
