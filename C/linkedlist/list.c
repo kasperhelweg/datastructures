@@ -14,6 +14,13 @@ Listnode* mallocNode( void );
 /*
  * Append a node to the list
  */
+/**
+ * Append a node to the linked list.
+ *
+ * @param head A pointer to the head of the linked list
+ *
+ */
+
 void append( Listnode** head, Data elem )
 {
   /* malloc space for new node and put data in node. make the next->NULL. */
