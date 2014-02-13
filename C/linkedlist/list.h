@@ -4,10 +4,9 @@
 typedef void* Data;
 
 typedef struct listnode {
-    Data content;
-    struct listnode* next;
+  Data content;
+  struct listnode* next;
 } Listnode;
-
 
 /* 
    add an element at the end of the list
@@ -18,7 +17,7 @@ void append( Listnode** start, Data elem );
 /* 
    add an element at the front
    we need a ** in order to easily make changes permanent when leaving procedure
- */
+*/
 void prepend( Listnode** start, Data elem );
 
 void* remv( Listnode** start, int ( *match )( Data ));
@@ -32,4 +31,3 @@ Data head( Listnode* start );
 void printList( Listnode* );
 
 #endif
-
