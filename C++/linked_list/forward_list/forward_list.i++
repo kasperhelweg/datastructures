@@ -1,0 +1,33 @@
+namespace thesis  {
+  
+  template <class T, class A>
+  forward_list<T, A>::forward_list( ) : h_( nullptr ), t_( nullptr ), alloc_( A( ) ) 
+  { };
+  
+  template <class T, class A> inline 
+  T& // Alternative : typename forward_list<T, A>::reference 
+  forward_list<T, A>::front( ) const 
+  {
+    return h_->data_; 
+  }
+  
+  template <class T, class A> 
+  void 
+  forward_list<T, A>::push_front( const T& e ) // Alternative : ( typename forward_list<T, A>::const_reference e ) 
+  { 
+    list_node_ *new_node = alloc_.allocate( 1 );
+    alloc_.construct( new_node, list_node_( e, h_ ) );
+    h_ = new_node;       
+  }
+  
+  template <class T, class A> 
+  void
+  forward_list<T, A>::pop_front( ) 
+  {
+    list_node_ *front = h_;
+    h_                = front->next_;
+    
+    alloc_.destroy( front );    
+		alloc_.deallocate( front, 1 );
+  }
+}

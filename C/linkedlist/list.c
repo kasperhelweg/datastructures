@@ -26,7 +26,7 @@ void append( Listnode** head, Data elem )
   /* follow pointers to the end. */ 
   while ( *head != NULL ) {
     head = &(*head)->next;
-  } 
+  }
 
   /* insert new node. */ 
   *head = new_node;
