@@ -1,0 +1,296 @@
+/**
+ * Source for most function descriptions : 
+ * http://www.cplusplus.com/reference/forward_list/forward_list
+ * 
+ */
+namespace KHJ  {
+  namespace thesis  {
+    
+    /*********************************************************************
+     *                                                                   *
+     *               F o r w a r d L i s t \ P u b l i c                 *
+     *                                                                   *
+     *********************************************************************/
+    
+    /**
+     * Constructor. Creates empty list with a dummy head node.
+     * 
+     * complexity is (probably) O(1)
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A>
+    forward_list<T, A>::forward_list( ) : alloc_( A( ) ) 
+    { 
+      h_ = buy_node_( );
+    }
+    
+    /**
+     * DeConstructor. 
+     * 
+     * complexity is (probably) linear in the length of the list.
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A>
+    forward_list<T, A>::~forward_list( ) 
+    { 
+      clear( ); sell_node_( h_ );
+    }
+    
+    /**
+     * Copy-Constructor. 
+     * 
+     * complexity is (probably) linear in the length of the list.
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A>
+    forward_list<T, A>::forward_list( const forward_list<T, A> & me ) : alloc_( A( ) ) 
+    {
+      h_ = buy_node_( );
+      node_ *tmp_ptr = h_;
+      
+      for( const_iterator iter = me.begin( ); iter != me.end( ); ++iter ) {
+        tmp_ptr->next_ = buy_node_( *iter );
+        tmp_ptr = tmp_ptr->next_;
+      }
+    }
+    
+    /**
+     * Assignment overload
+     * 
+     * complexity is O(?)
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A>
+    forward_list<T, A> & 
+    forward_list<T, A>::operator= (const forward_list<T, A> & other)
+    {
+      
+      
+    }
+     
+    /**
+     * Returns a bool value indicating whether the forward_list container is empty.
+     * 
+     * complexity is O(1)
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A> 
+    inline bool 
+    forward_list<T, A>::empty( ) const 
+    {
+      return h_->next_ == nullptr; 
+    }
+    
+    /**
+     * Returns a direct reference to the first element in the forward_list container.
+     * Calling this function on an empty container causes undefined behavior.
+     * 
+     * complexity is O(1)
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A> 
+    inline T & // Alternative : typename forward_list<T, A>::reference 
+    forward_list<T, A>::front( ) const 
+    {
+      return h_->next_->val_; 
+    }
+    
+    /**
+     * Inserts a new element at the beginning of the forward_list, right before 
+     * its current first element. 
+     * The content of val is copied (or moved) to the inserted element.
+     *
+     * complexity is O(1)
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A> 
+    void 
+    forward_list<T, A>::push_front( const T &v )
+    { 
+      node_ *n  = buy_node_( v );
+      n->next_  = h_->next_;
+      h_->next_ = n; 
+    }
+    
+    /**
+     * Removes the first element in the forward_list container, effectively reducing 
+     * its size by one. This destroys the removed element.
+     * Calling this function on the empty list is a no-op.
+     *
+     * complexity is O(1)
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A> 
+    void
+    forward_list<T, A>::pop_front( ) 
+    {
+      if( h_->next_ == nullptr ) return;
+      node_ *f = h_->next_;
+
+      h_->next_ = f->next_;   
+      f->next_  = nullptr;
+      sell_node_( f );
+    }
+
+    /**
+     * Returns an iterator pointing to the first element in the forward_list container.
+     * Notice that, unlike member forward_list::front, which returns a reference to the 
+     * first element, this function returns a forward iterator pointing to it.
+     * If the container is empty, the returned iterator value shall not be dereferenced.
+     *
+     * complexity is O(1)
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A> 
+    typename forward_list<T, A>::iterator
+    forward_list<T, A>::begin( ) 
+    { 
+      return iterator( h_->next_ );
+    }
+    
+    template <typename T, typename A> 
+    typename forward_list<T, A>::const_iterator
+    forward_list<T, A>::begin( ) const
+    { 
+      return const_iterator( h_->next_ );
+    }
+       
+    /**
+     * Returns an iterator referring to the past-the-end element in the forward_list 
+     * container. The  past-the-end  element is  the  theoretical element that would 
+     * follow the last element in the forward_list. It does not point to any element, 
+     * and thus shall not be dereferenced. 
+     *
+     * complexity is O(1)
+     * @author KHJ
+     *
+     */
+    template <typename T, typename A> 
+    inline typename forward_list<T, A>::iterator
+    forward_list<T, A>::end( ) 
+    { 
+      return iterator( );
+    }
+
+    template <typename T, typename A> 
+    inline typename forward_list<T, A>::const_iterator
+    forward_list<T, A>::end( ) const
+    { 
+      return const_iterator( );
+    }
+     
+    /*********************************************************************
+     *                                                                   *
+     *              F o r w a r d L i s t \ P r i v a t e                *
+     *                                                                   *
+     *********************************************************************/
+
+    // Buy a node. Heap memory is the currency.
+    template <typename T, typename A> 
+    typename forward_list<T, A>::node_ *
+    forward_list<T, A>::buy_node_( const T &val = T( ) ) 
+    {
+      node_ *node = alloc_.allocate( 1 );
+
+      try {
+        alloc_.construct( node, node_( val ) );
+      }
+      catch(...) {
+        alloc_.deallocate( node, 1 );
+        throw;
+      }
+      return node;
+    }
+  
+    // Sell a node. Heap memory is the currency.
+    template <typename T, typename A> 
+    void
+    forward_list<T, A>::sell_node_( node_ *node ) 
+    {
+      alloc_.destroy( node ); alloc_.deallocate( node, 1 );
+    }
+    
+    template <typename T, typename A>
+    void forward_list<T, A>::clear( ) 
+    {
+      if( !empty( ) ) {
+        node_ *tmp_ptr_ = h_->next_;
+        node_  *tmp_ptr = nullptr;
+        
+        do {
+          tmp_ptr = tmp_ptr_->next_; sell_node_( tmp_ptr_ );
+          tmp_ptr_ = tmp_ptr;
+        } while( tmp_ptr_ != nullptr );
+      }
+    
+      /*
+        CHECK THIS : ITERATOR IS INVALIDATED!!! HOW TO DEAL WITH THAT?!
+      if( !empty() ) {
+        node_ *tmp_ptr      = h_->next_;
+        node_ *tmp_ptr_lead = nullptr
+        
+        for( iterator iter = begin( ); iter != end( ); ++iter ) {
+          tmp_ptr_lead = tmp_ptr->next_; sell_node_( tmp_ptr );
+          tmp_ptr = tmp_ptr_lead;
+        }
+      }
+      */
+    }
+   
+        
+    /*********************************************************************
+     *                                                                   *
+     *              F o r w a r d L i s t::I t e r a t o r               *
+     *                                                                   *
+     *********************************************************************/
+    
+    template <typename T, typename A>
+    template <typename RefT, typename PtrT> 
+    T &
+    forward_list<T, A>::iterator_<RefT, PtrT>::operator*( ) const
+    {
+      return ptr->val_;
+    }
+
+    template <typename T, typename A> 
+    template <typename RefT, typename PtrT> 
+    typename forward_list<T, A>::template iterator_<RefT, PtrT> &
+    forward_list<T, A>::iterator_<RefT, PtrT>::operator++( )
+    {
+      ptr = ptr->next_; return *this;
+    }
+    
+    template <typename T, typename A> 
+    template <typename RefT, typename PtrT> 
+    typename forward_list<T, A>::template iterator_<RefT, PtrT>
+    forward_list<T, A>::iterator_<RefT, PtrT>::operator++( int )
+    {
+      iterator_ tmp = *this; ++*this; return tmp;
+    }
+    
+    template <typename T, typename A> 
+    template <typename RefT, typename PtrT> 
+    bool
+    forward_list<T, A>::iterator_<RefT, PtrT>::operator==( const iterator_ &other ) const
+    {
+      return ptr == other.ptr; 
+    }
+
+    template <typename T, typename A> 
+    template <typename RefT, typename PtrT> 
+    bool
+    forward_list<T, A>::iterator_<RefT, PtrT>::operator!=( const iterator_ &other ) const
+    {
+      return ptr != other.ptr;
+    }
+  }
+}
