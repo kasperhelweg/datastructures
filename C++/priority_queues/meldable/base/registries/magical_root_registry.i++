@@ -1,0 +1,296 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace root_registry  {
+      /**
+       * Constructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      magical_root_registry<N, M, S>::magical_root_registry( ) : size_( 0 ), top_( nullptr ) 
+      { 
+        state_.reserve( 2 );
+        state_[0] = root_table_.begin( );
+        state_[1] = std::next( state_[0] );
+        lo_.push_back( root_table_.begin( ) );
+      }
+
+      /**
+       * DeConstructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      magical_root_registry<N, M, S>::~magical_root_registry( ) 
+      { }
+      
+      /**
+       * top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      N* magical_root_registry<N, M, S>::top( ) const
+      { 
+        return top_; 
+      }
+
+      /**
+       * size( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      int magical_root_registry<N, M, S>::size( ) const
+      { 
+        return size_; 
+      }
+
+      /**
+       * size( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      bool magical_root_registry<N, M, S>::empty( ) const
+      { 
+        return size_ == 0; 
+      }
+
+      /**
+       * inject( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void magical_root_registry<N, M, S>::inject( N* Q )
+      { 
+        if( top_ == nullptr || 
+            M::compare_( (*Q).element(), (*top_).element() ) ) { 
+          top_ = Q; 
+        } 
+        root_table_.inject( Q );
+        size_++;
+        
+        if( (*root_table_.begin( )).size( ) == 2 ) { 
+          lo_.pop_back( ); 
+        } else if( (*root_table_.begin( )).size( ) == 3 ) { 
+          hi_.push_back( root_table_.begin( ) ); 
+        }
+        if( !hi_.empty( ) ) {
+          I I = hi_.back( ); hi_.pop_back( );
+          fix_( I );
+        }       
+      }
+
+      /**
+       * eject( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      N* magical_root_registry<N, M, S>::eject( )
+      { 
+        N* B;
+        int s = size_;
+        I j   = root_table_.begin( );
+        
+        if( s == 4 ) {
+          B = root_table_.remove_root( std::next( j ) );
+          N** st = M::split( B );
+          root_table_.insert_root( j, st[0] );
+          root_table_.insert_root( j, st[1] );      
+          delete[] st;
+        } else if( s <= 3 ) {
+          B = root_table_.eject( );
+        } else {
+          if( !in_idle_state_( ) && !lo_.empty( ) ) {
+            if( (*state_[0]).size( ) == 2 && (*state_[1]).size( ) == 2) {
+              if( !hi_.empty( ) && (*hi_[hi_.size( ) - 1]).size( ) == 3) {
+                I k = lo_.back( ); lo_.pop_back( );
+                unfix_( k );
+              }
+            } else {
+              I k = lo_.back( ); lo_.pop_back( );
+              unfix_( k );
+            }
+          }
+          B = root_table_.eject( );
+          if( !(*j).empty( ) && (*j).size( ) == 2 ) {  hi_.pop_back( );
+            // Valgrind reports Invalid Read... likely cause is:  lo_[lo_.size( ) - 1]
+          } else if( ( (*j).empty( ) || ( !(*j).empty() && (*j).size( ) == 1 )) 
+                     && ( lo_[lo_.size( ) - 1]  != j ) ) {
+            lo_.push_back( j );
+          }
+        }
+        --size_;
+        return B;
+      }
+
+      /**
+       * update_top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void magical_root_registry<N, M, S>::update_top( )
+      { 
+        top_ = nullptr;
+        for( auto it = root_table_.begin( ) ; it != root_table_.end( ) ; it++ ) {
+          for( auto vit = (*it).begin( ) ; vit != (*it).end( ) ; vit++ ) {
+            if( top_ == nullptr || 
+                M::compare_( (*(*vit)).element(),  (*top_).element() ) )  {          
+              top_ = *vit;
+            }
+          }
+        }
+      }
+
+      template<typename N, typename M, typename S>
+      void magical_root_registry<N, M, S>::update_top( N* Q )
+      { 
+        top_ = Q;
+      }
+       
+      template<typename N, typename M, typename S>
+      void magical_root_registry<N, M, S>::print( ) const
+      {
+        std::cout << "size: " << size( ) << std::endl;
+        root_table_.print( );
+        if( top_ != nullptr ) {
+          std::cout << "top: " << (*top_).element( ) << std::endl;
+        }
+      }
+      
+      template <typename N, typename M, typename S>
+      void magical_root_registry<N, M, S>::fix_( I j )
+      { 
+        I e = std::next( j );  
+        I w = std::prev( j );
+
+        if( e == root_table_.end( ) ) { root_table_.grow( ); --e; }
+
+        N* Q = root_table_.remove_root( j );
+        N* R = root_table_.remove_root( j );
+        N* V = root_table_.remove_root( j );
+        
+        N* t[3] =  { Q, R, V };     
+        swap_nodes_( t, 0, M::compare_( 
+        (*t[1]).element(), (*t[0]).element() ) );
+        swap_nodes_( t, 2, M::compare_( 
+        (*t[0]).element(), (*t[2]).element() ) );
+        
+        if( j != root_table_.begin( ) ) {
+          N** st = M::split( t[0] );
+          M::join_heaps( t[0], t[1], t[2]  ); 
+          root_table_.insert_root( e, t[0]  );
+          
+          if( !(*w).empty( ) && (*w).size( ) < 2 ) lo_.pop_back( );
+          update_lo_( e );
+          
+          root_table_.insert_root( w, st[0] ); 
+          root_table_.insert_root( w, st[1] );
+          if( (*w).size( ) > 2 ) hi_.push_back( w );
+          
+          delete[] st;
+        } else {
+          M::join_heaps( t[0], t[1], t[2]  ); 
+          root_table_.insert_root( e, t[0] );
+          update_lo_( e );
+        }
+        lo_.push_back( j );
+      
+      }
+
+      template <typename N, typename M, typename S>
+      void magical_root_registry<N, M, S>::unfix_( I j )
+      { 
+        I e = std::next( j );
+        I w = std::prev( j );
+        
+        N* P   = root_table_.remove_root( e );
+        N** st = M::split( P );
+        
+        if( (*e).empty( ) && e == root_table_.last( ) ) {
+          lo_.pop_back( ); root_table_.shrink( );
+        } else {          
+          if( !(*e).empty( ) && (*e).size( ) == 1 ) {
+            lo_.push_back( e );
+          } else if( !(*e).empty( ) && (*e).size( ) == 2 ){
+            hi_.pop_back( );
+          }
+        }
+        if( j != root_table_.begin( ) ) {
+          if( !(*w).empty( ) && (*w).size( ) >= 3 ) hi_.pop_back( ); 
+          
+          N* Q = root_table_.remove_root( w );
+          N* R = root_table_.remove_root( w );
+          
+          if( !(*w).empty( ) && (*w).size( ) <= 1  
+              && w != root_table_.begin( ) ) lo_.push_back( w ); 
+         
+          M::join_heaps( P, Q, R  );
+          M::siftdown( P );
+          P = (*P).find_root( ); 
+        }
+
+        root_table_.insert_root( j, P ); 
+        root_table_.insert_root( j, st[0] ); 
+        root_table_.insert_root( j, st[1] );
+        hi_.push_back( j );       
+        delete[] st;
+      }
+
+      
+      template<typename N, typename M, typename S>
+      bool magical_root_registry<N, M, S>::in_idle_state_( ) const
+      { 
+        if( (*state_[0]).size() == 2 && (*state_[1]).size() == 1) { 
+          return true;
+        } else if( (*state_[0]).size( ) == 1 && (*state_[1]).size( ) == 2) {
+          if( lo_.size( ) == 1 || lo_[lo_.size( ) - 2] == root_table_.last( ) ) {            
+            return true;
+          }
+        }
+        return false;
+      }
+
+      template <typename N, typename M, typename S>
+      void magical_root_registry<N, M, S>::update_lo_( I e ) 
+      {
+        if( (*e).size( ) == 1 && lo_.empty( ) ) { 
+          lo_.push_back( e );
+        } else if( (*e).size( ) == 2 ) { 
+          lo_.pop_back( ); 
+        } else if( (*e).size( ) == 3 ) { 
+          hi_.push_back( e ); 
+        } 
+      }
+      
+      // swap aux
+      template <typename N, typename M, typename S>
+      void magical_root_registry<N, M, S>::swap_nodes_ (N* nodes[], int i1, int i2) 
+      {
+        N* temp   = nodes[i1];
+        nodes[i1] = nodes[i2];
+        nodes[i2] = temp;
+      }
+    }
+  }
+}

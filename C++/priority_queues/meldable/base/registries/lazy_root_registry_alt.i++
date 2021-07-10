@@ -1,0 +1,209 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace root_registry  {
+      /**
+       * Constructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      lazy_root_registry_alt<N, M, S>::lazy_root_registry_alt( ) : size_( 0 ), cons_( 0 ), top_( nullptr ), root_list_( S( ) )
+      { }
+
+      /**
+       * DeConstructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      lazy_root_registry_alt<N, M, S>::~lazy_root_registry_alt( ) 
+      { }
+      
+      /**
+       * top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      N* lazy_root_registry_alt<N, M, S>::top( ) const
+      { 
+        return top_; 
+      }
+      
+      /**
+       * size( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      int lazy_root_registry_alt<N, M, S>::size( ) const
+      { 
+        return size_; 
+      }
+
+      template<typename N, typename M, typename S>
+      bool lazy_root_registry_alt<N, M, S>::empty( ) const
+      { 
+        return size_ == 0; 
+      }
+      
+      /**
+       * insert( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void lazy_root_registry_alt<N, M, S>::inject( N* Q )
+      { 
+        if( top_ == nullptr || 
+            M::compare_( (*Q).element(), (*top_).element() ) ) { 
+          top_ = Q; 
+        }
+        root_list_.inject( Q );
+        cons_ = 1; 
+        ++size_;
+      }
+
+      /**
+       * extract( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      N* lazy_root_registry_alt<N, M, S>::eject( )
+      { 
+        N* B = nullptr;
+        if( !root_list_.empty( ) ) {
+          B = root_list_.eject( );
+          if( (*B).height( ) != 0 ) {
+            N** st = M::split( B );
+            root_list_.inject( st[0] ); root_list_.inject( st[1] );
+            delete[] st;
+          }
+          --size_;
+        }
+        return B;    
+      }
+       
+      /**
+       * consolidate( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void lazy_root_registry_alt<N, M, S>::consolidate( )
+      { 
+        if( cons_ ) {
+          int i = 0;
+          int s = floor( log2( size_ + 1 ) );                    
+          std::vector<I> A[s];
+          for( auto it = root_list_.begin( ) ; it != root_list_.end( ) ; it++  ) {
+            i = (*(*it)).height( );
+            if( A[i].size( ) == 2 ) {
+              it++;
+              N* P = root_list_.remove_root( std::prev( it ) );
+              while( A[i].size( ) == 2 ) {
+                I C1 = A[i].back( ); A[i].pop_back( );
+                I C2 = A[i].back( ); A[i].pop_back( );
+                N* Q = root_list_.remove_root( C1 );
+                N* R = root_list_.remove_root( C2 );
+                N* t[3] = { P, Q, R };   
+                swap_nodes_( t, 0, M::compare_( 
+                  (*t[1]).element(), (*t[0]).element() ) );
+                swap_nodes_( t, 2, M::compare_( 
+                  (*t[0]).element(), (*t[2]).element() ) );
+                if( i == 0 ) {
+                  M::join_heaps( t[0], t[1], t[2]  );
+                } else {
+                  N** st = M::split( t[0] );
+                  M::join_heaps( t[0], t[1], t[2]  );
+                  root_list_.insert_root( std::next( it ), st[0] );
+                  root_list_.insert_root( std::next( it ), st[1] );
+                  delete[] st;
+                }
+                P = t[0]; i++;
+              }
+              root_list_.insert_root( it, P );
+              A[i].push_back( std::prev( it ) );
+              it--;
+            } else {
+              A[i].push_back( it );
+            }
+          }
+          root_list_.root_list_.sort( []( N* a, N* b ) { return (*a).height( ) < (*b).height( ); } );
+        }
+        cons_ = 0;      
+      }
+
+      template<typename N, typename M, typename S>
+      void lazy_root_registry_alt<N, M, S>::meld( lazy_root_registry_alt& R )
+      {
+        int s = R.size( );
+        root_list_.concatenate( R.root_list_ );
+        if( M::compare_( (*(R.top_)).element(),  (*top_).element() ) )
+          top_ = R.top_;
+      
+        size_ += s; cons_ = 1; R.size_ = 0; R.top_ = nullptr;
+      }
+
+      /**
+       * update_top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void lazy_root_registry_alt<N, M, S>::update_top( )
+      {
+        top_ = nullptr;
+        for( auto it = root_list_.begin( ) ; it != root_list_.end( ) ; it++ ) {        
+          if( top_ == nullptr || 
+              M::compare_( (*(*it)).element(),  (*top_).element() ) )  {          
+            top_ = *it;
+          }
+        }
+      }
+
+      template<typename N, typename M, typename S>
+      void lazy_root_registry_alt<N, M, S>::update_top( N* Q )
+      {
+        top_ = Q;
+      }
+
+      template<typename N, typename M, typename S>
+      void lazy_root_registry_alt<N, M, S>::print( ) const
+      {
+        std::cout << "queue size: " << size_ << std::endl;     
+        root_list_.print( );
+        if( top_ != nullptr ) {
+          std::cout << "top: " << (*top_).element( ) << std::endl;
+        }
+        std::cout << std::endl;     
+      }
+
+      // swap aux
+      template <typename N, typename M, typename S>
+      void lazy_root_registry_alt<N, M, S>::swap_nodes_ (N* nodes[], int i1, int i2) 
+      {
+        N* temp   = nodes[i1];
+        nodes[i1] = nodes[i2];
+        nodes[i2] = temp;
+      }
+    }
+  }
+}

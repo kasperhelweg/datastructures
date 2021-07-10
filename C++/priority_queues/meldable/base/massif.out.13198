@@ -1,0 +1,759 @@
+desc: (none)
+cmd: ./boost_heaps.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=86681041
+mem_heap_B=779045
+mem_heap_extra_B=46203
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=262151308
+mem_heap_B=2225381
+mem_heap_extra_B=177843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=392388283
+mem_heap_B=4050597
+mem_heap_extra_B=307691
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=518238537
+mem_heap_B=4755685
+mem_heap_extra_B=395827
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=720516289
+mem_heap_B=7911013
+mem_heap_extra_B=593635
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=835185983
+mem_heap_B=8698341
+mem_heap_extra_B=692051
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=987116911
+mem_heap_B=7317221
+mem_heap_extra_B=519411
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1163743163
+mem_heap_B=11465701
+mem_heap_extra_B=1037971
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1282194307
+mem_heap_B=7317221
+mem_heap_extra_B=519411
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1496953386
+mem_heap_B=15746533
+mem_heap_extra_B=1048795
+mem_stacks_B=0
+heap_tree=detailed
+n5: 15746533 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8388672 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 8388672 0x401A66: main (boost_heaps.c++:84)
+ n1: 3145728 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 3145728 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 3145728 0x401A66: main (boost_heaps.c++:84)
+ n1: 2097152 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 2097152 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 2097152 0x401A66: main (boost_heaps.c++:84)
+ n1: 2097152 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 2097152 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 2097152 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=11
+#-----------
+time=1645003648
+mem_heap_B=14616549
+mem_heap_extra_B=1038611
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1761519676
+mem_heap_B=18762469
+mem_heap_extra_B=1556851
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1910529472
+mem_heap_B=18762469
+mem_heap_extra_B=1556851
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=2059926775
+mem_heap_B=18762469
+mem_heap_extra_B=1556851
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=2272085528
+mem_heap_B=31475173
+mem_heap_extra_B=2109467
+mem_stacks_B=0
+heap_tree=detailed
+n5: 31475173 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16777280 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 16777280 0x401A66: main (boost_heaps.c++:84)
+ n1: 6291456 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 6291456 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 6291456 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 4194304 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 4194304 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=16
+#-----------
+time=2443279228
+mem_heap_B=31280485
+mem_heap_extra_B=2347267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=2496985702
+mem_heap_B=29215333
+mem_heap_extra_B=2089123
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2668238305
+mem_heap_B=31280485
+mem_heap_extra_B=2347267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=2721944778
+mem_heap_B=29215333
+mem_heap_extra_B=2089123
+mem_stacks_B=0
+heap_tree=detailed
+n5: 29215333 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16614592 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 16614592 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 4194304 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 4194304 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 4194304 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=20
+#-----------
+time=2893994561
+mem_heap_B=31280485
+mem_heap_extra_B=2347267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=2947701033
+mem_heap_B=29215333
+mem_heap_extra_B=2089123
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=3118840054
+mem_heap_B=31280485
+mem_heap_extra_B=2347267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=3172546531
+mem_heap_B=29215333
+mem_heap_extra_B=2089123
+mem_stacks_B=0
+heap_tree=detailed
+n5: 29215333 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16614592 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 16614592 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 4194304 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 4194304 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 4194304 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=24
+#-----------
+time=3343335575
+mem_heap_B=31280485
+mem_heap_extra_B=2347267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=3428430521
+mem_heap_B=37522597
+mem_heap_extra_B=3127531
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=3687341802
+mem_heap_B=40620389
+mem_heap_extra_B=3514755
+mem_stacks_B=0
+heap_tree=detailed
+n5: 40620389 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 28019648 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 28019648 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 4194304 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 4194304 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 4194304 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=27
+#-----------
+time=3767901439
+mem_heap_B=37522597
+mem_heap_extra_B=3127531
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=4026828468
+mem_heap_B=40620325
+mem_heap_extra_B=3514747
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=4099586364
+mem_heap_B=30587685
+mem_heap_extra_B=2260667
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=4366629572
+mem_heap_B=40620325
+mem_heap_extra_B=3514747
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=4439387434
+mem_heap_B=30587685
+mem_heap_extra_B=2260667
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=4705896533
+mem_heap_B=40620325
+mem_heap_extra_B=3514747
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=4778654436
+mem_heap_B=30587685
+mem_heap_extra_B=2260667
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=5045408915
+mem_heap_B=40620325
+mem_heap_extra_B=3514747
+mem_stacks_B=0
+heap_tree=detailed
+n5: 40620325 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 28019584 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 28019584 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 4194304 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 4194304 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n1: 4194304 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 4194304 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 4194304 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=35
+#-----------
+time=5181322227
+mem_heap_B=62932453
+mem_heap_extra_B=4210651
+mem_stacks_B=0
+heap_tree=detailed
+n5: 62932453 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33554496 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 33554496 0x401A66: main (boost_heaps.c++:84)
+ n1: 12582912 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 12582912 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 12582912 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 8388608 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 8388608 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=36
+#-----------
+time=5579038980
+mem_heap_B=67213093
+mem_heap_extra_B=5265979
+mem_stacks_B=0
+heap_tree=detailed
+n5: 67213093 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 42029440 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 42029440 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 8388608 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 8388608 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 8388608 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=37
+#-----------
+time=5698293420
+mem_heap_B=61157477
+mem_heap_extra_B=4509027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=6091425051
+mem_heap_B=67213029
+mem_heap_extra_B=5265971
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=6210679496
+mem_heap_B=61157477
+mem_heap_extra_B=4509027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=6606985580
+mem_heap_B=67213029
+mem_heap_extra_B=5265971
+mem_stacks_B=0
+heap_tree=detailed
+n5: 67213029 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 42029376 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 42029376 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 8388608 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 8388608 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 8388608 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=41
+#-----------
+time=6726240024
+mem_heap_B=61157477
+mem_heap_extra_B=4509027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=7121221525
+mem_heap_B=67213029
+mem_heap_extra_B=5265971
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=7240475970
+mem_heap_B=61157477
+mem_heap_extra_B=4509027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=7634981953
+mem_heap_B=67213029
+mem_heap_extra_B=5265971
+mem_stacks_B=0
+heap_tree=detailed
+n5: 67213029 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 42029376 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 42029376 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 8388608 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 8388608 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 8388608 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=45
+#-----------
+time=7824053820
+mem_heap_B=79144357
+mem_heap_extra_B=6757387
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=8421473698
+mem_heap_B=88227749
+mem_heap_extra_B=7892811
+mem_stacks_B=0
+heap_tree=peak
+n5: 88227749 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 63044096 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 63044096 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 8388608 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 8388608 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 8388608 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=47
+#-----------
+time=8600355223
+mem_heap_B=79144357
+mem_heap_extra_B=6757387
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=9198237249
+mem_heap_B=88227685
+mem_heap_extra_B=7892803
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=9218472461
+mem_heap_B=65101797
+mem_heap_extra_B=5002067
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=9238707718
+mem_heap_B=41975781
+mem_heap_extra_B=2111299
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=9316413049
+mem_heap_B=25183717
+mem_heap_extra_B=12291
+mem_stacks_B=0
+heap_tree=detailed
+n4: 25183717 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8388608 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 8388608 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 8388608 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 8388608 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n0: 17893 in 5 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=52
+#-----------
+time=9336648302
+mem_heap_B=43170597
+mem_heap_extra_B=2260667
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=9356883543
+mem_heap_B=61157477
+mem_heap_extra_B=4509027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=9377118784
+mem_heap_B=79144357
+mem_heap_extra_B=6757387
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=9975786934
+mem_heap_B=88227685
+mem_heap_extra_B=7892803
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=9996022224
+mem_heap_B=65101733
+mem_heap_extra_B=5002043
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=10016257447
+mem_heap_B=41975845
+mem_heap_extra_B=2111307
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=10093962734
+mem_heap_B=25183717
+mem_heap_extra_B=12291
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=10114197982
+mem_heap_B=43170597
+mem_heap_extra_B=2260667
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=10134433223
+mem_heap_B=61157477
+mem_heap_extra_B=4509027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=10154668463
+mem_heap_B=79144357
+mem_heap_extra_B=6757387
+mem_stacks_B=0
+heap_tree=detailed
+n5: 79144357 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 53960704 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 53960704 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 8388608 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 8388608 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 8388608 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=62
+#-----------
+time=10749389412
+mem_heap_B=88227685
+mem_heap_extra_B=7892803
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=10769624659
+mem_heap_B=65101733
+mem_heap_extra_B=5002043
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=10789859881
+mem_heap_B=41975781
+mem_heap_extra_B=2111299
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=10867565212
+mem_heap_B=25183717
+mem_heap_extra_B=12291
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=10887800460
+mem_heap_B=43170597
+mem_heap_extra_B=2260667
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=10908035700
+mem_heap_B=61157477
+mem_heap_extra_B=4509027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=10928270940
+mem_heap_B=79144357
+mem_heap_extra_B=6757387
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=11524374341
+mem_heap_B=88227685
+mem_heap_extra_B=7892803
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=11544609588
+mem_heap_B=65101733
+mem_heap_extra_B=5002059
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=11564844810
+mem_heap_B=41975781
+mem_heap_extra_B=2111315
+mem_stacks_B=0
+heap_tree=detailed
+n5: 41975781 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16792128 0x403AAD: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (new_allocator.h:104)
+  n0: 16792128 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402439: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 8388608 0x403698: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (stl_vector.h:923)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402549: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 8388608 0x4036BB: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n1: 8388608 0x402659: void std::vector<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, std::allocator<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> > >::_M_emplace_back_aux<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&> >(boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>&&) (new_allocator.h:104)
+  n1: 8388608 0x403B44: KHJ::thesis::benchmark::bench<boost::heap::detail::node_handle<boost::heap::detail::marked_heap_node<node<long long> >*, boost::heap::detail::make_fibonacci_heap_base<node<long long>, boost::parameter::aux::arg_list<boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::aux::empty_arg_list> >::type, node<long long>&>, long long, boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_> >::decrease_key_boost(boost::heap::fibonacci_heap<node<long long>, boost::heap::compare<counting_comparator<node<long long> > >, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_, boost::parameter::void_>&) (vector.tcc:101)
+   n0: 8388608 0x401A66: main (boost_heaps.c++:84)
+ n0: 17829 in 4 places, all below massif's threshold (01.00%)

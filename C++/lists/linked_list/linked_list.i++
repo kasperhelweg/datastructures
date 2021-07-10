@@ -1,0 +1,56 @@
+/* list_node */
+namespace cphstl 
+{
+  list_node::list_node( int key, const Data& data ) : key( key ), data( data ) { };
+ 
+  int  
+  list_node::get_data( void ) const 
+  {
+    return data;
+  }
+  
+  void 
+  list_node::set_data( const Data& data ) 
+  {
+    this->data = data;
+  }
+}
+
+/* linked_list */
+namespace cphstl 
+{
+  linked_list::linked_list( ) : head_( nullptr ), size_( 0 ) { };
+
+  list_node*
+  linked_list::front( ) const
+  {
+    return head_;
+  }
+
+  void
+  linked_list::push_front( int key, const Data& data )
+  {
+    list_node* new_node = new list_node( key, data );
+    
+    new_node->east = head_;
+    head_          = new_node;    
+    size_         += 1;
+  }
+  
+  void
+  linked_list::pop_front( )
+  {
+    list_node* node = head_; if( node == nullptr ) return;
+    
+    head_      = node->east;
+    node->east = nullptr;
+    
+    delete node; size_ -= 1;
+  }
+  
+  int
+  linked_list::size( ) const
+  {
+    return size_;
+  }
+}

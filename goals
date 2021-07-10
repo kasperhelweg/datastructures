@@ -1,0 +1,14 @@
+K.PH / 
+
+The aim of the algorithms and datastructures library is:
+
+Supply standard algorithms and datastructures
+Supply novel and obscure algorithms and datastrcutures
+Have an experimental and engineering approach
+Supply thorough ducomentation and beutifull API's
+
+Engineering approach
+
+"Baseline approach" - meaning "dont cheat", reproduceable and predeictable test/benchmarks
+All programs should be micro-benchmarkable, generic and composeable
+

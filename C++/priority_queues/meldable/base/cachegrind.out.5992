@@ -1,0 +1,577 @@
+desc: I1 cache:         32768 B, 64 B, 8-way associative
+desc: D1 cache:         32768 B, 64 B, 8-way associative
+desc: LL cache:         4194304 B, 64 B, 16-way associative
+cmd: ./lazy_q.out
+events: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw 
+fl=???
+fn=(below main)
+0 60 6 6 16 5 0 17 0 0
+fn=???
+0 824168279 324 318 228536513 1035670 1385 87013943 49720 78
+fn=KHJ::thesis::policy::lazy_consolidation_policy<KHJ::thesis::heap_node::heap_awh_node<long>, KHJ::thesis::modifier::node_awh_modifier<KHJ::thesis::heap_node::heap_awh_node<long>, std::less<long> >, KHJ::thesis::store::lazy_store<KHJ::thesis::heap_node::hea
+0 2464164711 100 100 663057616 18717970 11336928 200326403 5682602 4135013
+fn=KHJ::thesis::queue::lazy_binary_queue<long, std::less<long>, KHJ::thesis::heap_node::heap_awh_node<long>, KHJ::thesis::modifier::node_awh_modifier<KHJ::thesis::heap_node::heap_awh_node<long>, std::less<long> >, KHJ::thesis::registry::root_registry<KHJ::th
+0 1867145227 60 60 616753983 39526608 12945768 285348613 26013224 7835756
+fn=KHJ::thesis::registry::root_registry<KHJ::thesis::heap_node::heap_awh_node<long>, KHJ::thesis::modifier::node_awh_modifier<KHJ::thesis::heap_node::heap_awh_node<long>, std::less<long> >, KHJ::thesis::store::lazy_store<KHJ::thesis::heap_node::heap_awh_node
+0 27 1 1 9 0 0 6 0 0
+fn=KHJ::thesis::store::lazy_store<KHJ::thesis::heap_node::heap_awh_node<long> >::lazy_store()
+0 55 4 4 10 2 0 24 0 0
+fn=_Exit
+0 8 2 2 1 0 0 0 0 0
+fn=_GLOBAL__sub_I_main
+0 8 0 0 0 0 0 1 0 0
+fn=_IO_cleanup
+0 100 8 8 30 1 1 17 0 0
+fn=_IO_default_setbuf
+0 29 3 3 7 0 0 11 0 0
+fn=_IO_default_xsputn
+0 180 4 4 72 0 0 60 0 0
+fn=_IO_do_write@@GLIBC_2.2.5
+0 312 2 2 52 0 0 52 0 0
+fn=_IO_doallocbuf
+0 13 2 2 6 1 1 2 0 0
+fn=_IO_file_doallocate
+0 53 5 5 11 1 1 6 0 0
+fn=_IO_file_overflow@@GLIBC_2.2.5
+0 1042 17 17 290 0 0 167 1 1
+fn=_IO_file_setbuf@@GLIBC_2.2.5
+0 15 2 2 3 0 0 8 0 0
+fn=_IO_file_stat
+0 4 1 1 1 0 0 0 0 0
+fn=_IO_file_sync@@GLIBC_2.2.5
+0 429 2 2 198 1 1 66 0 0
+fn=_IO_file_write@@GLIBC_2.2.5
+0 936 2 2 208 0 0 130 0 0
+fn=_IO_file_xsputn@@GLIBC_2.2.5
+0 3090 4 4 613 6 6 175 3 2
+fn=_IO_flush_all_lockp
+0 88 9 9 25 3 3 12 0 0
+fn=_IO_no_init
+0 132 8 8 30 0 0 48 10 8
+fn=_IO_old_init
+0 132 17 17 12 0 0 96 5 5
+fn=_IO_setb
+0 154 8 8 40 0 0 40 0 0
+fn=_IO_str_init_static_internal
+0 210 14 14 30 0 0 72 0 0
+fn=__GI_memcmp
+0 857 5 5 143 0 0 0 0 0
+fn=__GI_memcpy
+0 322 15 15 42 6 6 28 6 6
+fn=__GI_mempcpy
+0 770 6 6 111 0 0 81 7 6
+fn=__acos_finite
+0 7 1 1 2 0 0 1 0 0
+fn=__asin_finite
+0 7 1 1 2 0 0 1 0 0
+fn=__atan2_finite
+0 10 2 2 2 0 0 1 0 0
+fn=__call_tls_dtors
+0 12 2 2 5 0 0 4 0 0
+fn=__cpu_indicator_init
+0 89 8 8 19 2 1 13 0 0
+fn=__ctype_init
+0 16 2 2 10 4 0 3 0 0
+fn=__cxa_atexit
+0 110 2 2 25 0 0 40 2 0
+fn=__cxa_finalize
+0 314 6 6 81 1 1 27 0 0
+fn=__cxa_guard_acquire
+0 26 4 4 10 1 0 6 0 0
+fn=__cxa_guard_release
+0 5 2 2 2 0 0 2 0 0
+fn=__cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+0 1400 3 3 440 0 0 360 0 0
+fn=__cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+0 812 29 29 308 14 13 224 0 0
+fn=__default_morecore
+0 608 2 2 76 0 0 76 45 5
+fn=__dynamic_cast
+0 2214 15 15 648 38 24 648 0 0
+fn=__exp_finite
+0 10 2 2 2 0 0 1 0 0
+fn=__gconv_btwoc_ascii
+0 640 1 1 128 0 0 0 0 0
+fn=__get_cpu_features
+0 75 1 1 30 1 1 0 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::overflow(int)
+0 156 9 9 26 0 0 0 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::sync()
+0 58 1 1 29 1 1 0 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::xsputn(char const*, long)
+0 125 1 1 25 6 6 0 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<wchar_t, std::char_traits<wchar_t> >::sync()
+0 6 1 1 3 2 2 0 0 0
+fn=__init_cpu_features
+0 78 9 9 7 1 1 13 0 0
+fn=__init_misc
+0 24 2 2 7 1 0 5 1 0
+fn=__libc_csu_init
+0 41 2 2 9 2 0 9 0 0
+fn=__libc_memalign
+0 1175 5 5 197 3 0 194 0 0
+fn=__linkin_atfork
+0 9 2 2 4 2 1 1 0 0
+fn=__log2_finite
+0 204375312 14 14 33125319 19555 405 0 0 0
+fn=__log_finite
+0 10 2 2 2 0 0 1 0 0
+fn=__memcmp_sse4_1
+0 111 10 10 38 1 1 0 0 0
+fn=__memcpy_sse2_unaligned
+0 194 23 23 39 0 0 32 4 4
+fn=__memmove_ssse3_back
+0 13522090 85 85 4622873 1148304 776169 4620791 1154764 1152722
+fn=__mpn_cmp
+0 165 11 11 45 0 0 0 0 0
+fn=__mpn_divrem
+0 2100 23 23 582 0 0 498 6 6
+fn=__mpn_extract_double
+0 126 12 12 12 0 0 30 0 0
+fn=__mpn_lshift
+0 90 4 4 12 0 0 6 6 6
+fn=__mpn_mul
+0 342 11 11 99 3 3 90 12 12
+fn=__mpn_mul_1
+0 1128 17 17 162 0 0 111 0 0
+fn=__mpn_rshift
+0 204 13 13 36 0 0 24 0 0
+fn=__new_exitfn
+0 214 5 5 55 10 3 21 1 0
+fn=__overflow
+0 157 1 1 78 2 2 1 0 0
+fn=__pow_finite
+0 7 1 1 2 0 0 1 0 0
+fn=__printf_fp
+0 5347 249 249 1295 54 54 669 42 42
+fn=__run_exit_handlers
+0 110 4 4 17 5 5 15 0 0
+fn=__sigjmp_save
+0 9 0 0 2 0 0 2 0 0
+fn=__sigsetjmp
+0 246 4 4 64 0 0 104 3 1
+fn=__strcmp_ssse3
+0 686 28 28 84 14 13 0 0 0
+fn=__syscall_clock_gettime
+0 36 1 1 12 0 0 0 0 0
+fn=__tls_get_addr
+0 11 2 2 7 2 2 0 0 0
+fn=__unregister_atfork
+0 52 2 2 20 2 2 4 0 0
+fn=__write_nocancel
+0 130 0 0 26 0 0 0 0 0
+fn=_dl_add_to_namespace_list
+0 250 2 2 62 0 0 41 0 0
+fn=_dl_add_to_slotinfo
+0 40 2 2 16 6 0 10 1 0
+fn=_dl_addr
+0 56045 8 8 13657 1036 833 17 3 0
+fn=_dl_allocate_tls_init
+0 123 7 7 38 3 0 18 1 0
+fn=_dl_allocate_tls_storage
+0 325 3 3 5 0 0 292 36 36
+fn=_dl_cache_libcmp
+0 3685 4 4 572 36 36 0 0 0
+fn=_dl_catch_error
+0 480 3 3 132 0 0 240 5 5
+fn=_dl_check_all_versions
+0 117 2 2 19 0 0 11 0 0
+fn=_dl_check_map_versions
+0 4141 14 14 1308 21 18 507 41 39
+fn=_dl_debug_initialize
+0 65 3 3 22 0 0 4 0 0
+fn=_dl_debug_state
+0 2 0 0 2 0 0 0 0 0
+fn=_dl_determine_tlsoffset
+0 107 6 6 19 1 1 11 0 0
+fn=_dl_discover_osversion
+0 88 4 4 15 1 1 7 1 1
+fn=_dl_find_dso_for_object
+0 67 4 4 27 4 0 5 0 0
+fn=_dl_fini
+0 431 12 12 143 40 40 47 6 6
+fn=_dl_fixup
+0 8390 10 10 3026 449 264 1015 4 4
+fn=_dl_higher_prime_number
+0 144 1 1 14 2 1 0 0 0
+fn=_dl_important_hwcaps
+0 250 19 19 48 0 0 42 2 2
+fn=_dl_init
+0 122 3 3 33 2 0 14 0 0
+fn=_dl_init_paths
+0 91 9 9 14 0 0 28 1 1
+fn=_dl_initial_error_catch_tsd
+0 26 0 0 13 0 0 0 0 0
+fn=_dl_load_cache_lookup
+0 1225 14 14 213 31 31 93 0 0
+fn=_dl_lookup_symbol_x
+0 528128 20 20 90449 1377 1149 30683 34 22
+fn=_dl_map_object
+0 2210 22 22 536 1 1 322 4 4
+fn=_dl_map_object_deps
+0 2735 34 34 596 6 1 237 4 4
+fn=_dl_map_object_from_fd
+0 4410 45 45 1007 42 42 462 51 51
+fn=_dl_mcount_wrapper_check
+0 512 2 2 384 0 0 0 0 0
+fn=_dl_name_match_p
+0 9616 6 6 2488 60 31 1430 4 4
+fn=_dl_new_object
+0 1172 13 13 223 7 7 214 44 44
+fn=_dl_next_ld_env_entry
+0 422 2 2 144 25 25 1 0 0
+fn=_dl_next_tls_modid
+0 16 2 2 6 0 0 2 0 0
+fn=_dl_protect_relro
+0 95 1 1 30 0 0 10 0 0
+fn=_dl_receive_error
+0 28 2 2 10 0 0 12 0 0
+fn=_dl_relocate_object
+0 216374 47 47 52506 3828 2930 17345 1046 704
+fn=_dl_runtime_resolve
+0 2121 6 6 909 0 0 808 4 2
+fn=_dl_setup_hash
+0 175 2 2 49 9 9 42 0 0
+fn=_dl_sort_fini
+0 589 6 6 149 4 4 35 0 0
+fn=_dl_start
+0 829 21 21 164 26 24 58 16 16
+fn=_dl_sysdep_read_whole_file
+0 41 3 3 6 0 0 9 0 0
+fn=_dl_sysdep_start
+0 474 13 11 133 22 20 29 6 6
+fn=_dl_sysdep_start_cleanup
+0 1 1 1 1 0 0 0 0 0
+fn=_dl_unload_cache
+0 10 1 1 3 1 0 2 0 0
+fn=_dl_vdso_vsym
+0 28 2 2 12 2 0 0 0 0
+fn=_fxstat
+0 70 2 2 7 0 0 0 0 0
+fn=_init
+0 103 7 7 17 5 0 18 4 3
+fn=_int_free
+0 435677020 53 53 108016246 713906 559118 48008521 221 48
+fn=_int_malloc
+0 414199487 144 144 88260795 2013511 1871349 53680915 751738 661753
+fn=_setjmp
+0 2 1 1 0 0 0 0 0 0
+fn=access
+0 9 1 1 1 0 0 1 0 0
+fn=allocate_dtv
+0 19 1 1 4 0 0 5 1 1
+fn=bcmp
+0 1803 14 14 455 11 11 142 3 3
+fn=bool std::has_facet<std::ctype<char> >(std::locale const&)
+0 84 2 2 36 1 0 12 0 0
+fn=bool std::has_facet<std::ctype<wchar_t> >(std::locale const&)
+0 84 2 2 36 0 0 12 0 0
+fn=bool std::has_facet<std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+0 84 1 1 36 0 0 12 0 0
+fn=bool std::has_facet<std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+0 84 1 1 36 2 0 12 0 0
+fn=bool std::has_facet<std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+0 84 2 2 36 0 0 12 0 0
+fn=bool std::has_facet<std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+0 84 2 2 36 0 0 12 0 0
+fn=brk
+0 1066 7 7 182 0 0 109 36 10
+fn=btowc
+0 8064 4 4 2176 3 0 1024 0 0
+fn=call_init.part.0
+0 383 4 4 123 25 0 60 0 0
+fn=calloc
+0 136 1 1 0 0 0 0 0 0
+fn=ceil
+0 6 2 2 2 0 0 1 0 0
+fn=ceilf
+0 6 1 1 2 0 0 1 0 0
+fn=check_match.9450
+0 66097 11 11 27787 321 213 7950 28 17
+fn=clock
+0 216 2 2 36 0 0 12 0 0
+fn=clock_gettime
+0 120 1 1 48 19 18 12 0 0
+fn=close
+0 30 1 1 6 0 0 0 0 0
+fn=cos
+0 10 2 2 2 0 0 1 0 0
+fn=dl_main
+0 1213 74 74 262 41 20 141 17 17
+fn=do_lookup_x
+0 362843 39 39 116949 2739 930 51969 32 21
+fn=do_preload
+0 28 3 3 7 0 0 8 0 0
+fn=exit
+0 4 1 1 0 0 0 1 0 0
+fn=expand_dynamic_string_token
+0 20 2 2 5 0 0 6 0 0
+fn=fflush
+0 1280 10 10 544 4 4 128 0 0
+fn=floor
+0 12 2 2 4 0 0 2 0 0
+fn=floorf
+0 6 1 1 2 0 0 1 0 0
+fn=free
+0 90005687 9 9 18001145 547134 470328 22 0 0
+fn=fwrite
+0 1550 18 18 525 28 28 175 1 1
+fn=gettimeofday
+0 61 3 3 5 0 0 5 0 0
+fn=hack_digit.13635
+0 2065 20 20 700 0 0 322 0 0
+fn=handle_intel
+0 98 5 5 14 0 0 26 0 0
+fn=index
+0 463 6 6 60 5 5 0 0 0
+fn=init_cacheinfo
+0 144 8 8 9 1 0 13 1 1
+fn=init_tls
+0 92 6 6 21 5 2 14 0 0
+fn=intel_check_word
+0 850 11 11 70 6 6 12 0 0
+fn=isinf
+0 78 4 4 6 0 0 0 0 0
+fn=isnan
+0 42 5 5 6 0 0 0 0 0
+fn=local_strdup
+0 85 1 1 10 0 0 20 0 0
+fn=log2
+0 12000033 6 6 9 9 9 0 0 0
+fn=main
+0 226000159 45 45 61000012 4076234 2348380 57000081 999892 982496
+fn=malloc
+0 246015364 5 5 72004482 204394 328 18001121 27 10
+fn=malloc_consolidate
+0 34318 29 29 9034 362 68 2926 151 24
+fn=malloc_hook_ini
+0 11 2 2 3 2 1 3 0 0
+fn=malloc_init_state
+0 648 2 2 2 0 0 257 32 32
+fn=map_doit
+0 12 1 1 5 0 0 3 0 0
+fn=match_symbol
+0 1970 5 5 758 38 36 198 0 0
+fn=memchr
+0 119 11 11 12 0 0 0 0 0
+fn=memcpy
+0 871 6 6 148 5 5 124 15 15
+fn=memcpy@@GLIBC_2.14
+0 7 1 1 3 2 2 0 0 0
+fn=memcpy@GLIBC_2.2.5
+0 26 2 1 8 2 0 0 0 0
+fn=mempcpy
+0 251 6 6 37 2 1 28 5 5
+fn=memset
+0 64824279 12 12 3000016 0 0 23217366 86 86
+fn=mmap
+0 378 3 3 63 0 0 0 0 0
+fn=mprotect
+0 50 1 1 10 0 0 0 0 0
+fn=munmap
+0 55 3 3 11 0 0 0 0 0
+fn=munmap_chunk
+0 210 5 5 80 15 7 0 0 0
+fn=new_do_write
+0 988 14 14 338 6 6 260 0 0
+fn=newlocale
+0 40 5 5 12 0 0 9 0 0
+fn=open
+0 30 1 1 6 0 0 0 0 0
+fn=open_verify
+0 967 13 13 171 6 6 88 1 1
+fn=openaux
+0 187 1 1 88 0 0 33 0 0
+fn=operator delete(void*)
+0 18001119 1 1 0 0 0 0 0 0
+fn=operator delete[](void*)
+0 2999267 2 2 0 0 0 0 0 0
+fn=operator new(unsigned long)
+0 90005595 7 7 18001119 0 0 18001119 166 26
+fn=operator new[](unsigned long)
+0 11997068 1 1 2999267 0 0 2999267 0 0
+fn=pow
+0 240013640 9 9 36002046 0 0 36002046 2 2
+fn=ptmalloc_init.part.7
+0 463 7 7 152 41 1 15 4 2
+fn=putc
+0 1014 4 4 442 4 4 104 0 0
+fn=rand
+0 7999992 2 2 1999998 0 0 1999998 0 0
+fn=random
+0 33999966 6 6 11999988 3 3 1999998 0 0
+fn=random_r
+0 51935432 4 4 15999984 8 8 7999992 0 0
+fn=read
+0 25 1 1 5 0 0 0 0 0
+fn=rindex
+0 24 2 2 2 1 0 0 0 0
+fn=rint
+0 6 1 1 2 0 0 1 0 0
+fn=rintf
+0 6 1 1 2 0 0 1 0 0
+fn=rtld_lock_default_lock_recursive
+0 116 3 2 116 4 1 0 0 0
+fn=rtld_lock_default_unlock_recursive
+0 116 0 0 116 1 0 0 0 0
+fn=sbrk
+0 1927 8 8 537 218 27 303 1 0
+fn=sin
+0 10 1 1 2 0 0 1 0 0
+fn=std::__num_base::_S_format_float(std::ios_base const&, char*, char)
+0 162 8 8 12 0 0 30 0 0
+fn=std::__timepunct<char>::_M_initialize_timepunct(__locale_struct*)
+0 107 12 12 6 0 0 52 0 0
+fn=std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned long)
+0 22 2 2 4 0 0 9 0 0
+fn=std::__timepunct<wchar_t>::_M_initialize_timepunct(__locale_struct*)
+0 105 12 12 5 0 0 51 0 0
+fn=std::__timepunct<wchar_t>::__timepunct(std::__timepunct_cache<wchar_t>*, unsigned long)
+0 22 2 2 4 1 0 9 1 1
+fn=std::basic_ios<char, std::char_traits<char> >::_M_cache_locale(std::locale const&)
+0 120 2 2 12 0 0 44 0 0
+fn=std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)
+0 88 2 2 12 0 0 40 0 0
+fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::_M_cache_locale(std::locale const&)
+0 120 3 3 12 0 0 44 0 0
+fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*)
+0 88 2 2 12 0 0 40 0 0
+fn=std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+0 969 23 23 399 12 12 209 0 0
+fn=std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)
+0 526 2 2 183 10 10 80 0 0
+fn=std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
+0 342 1 1 57 0 0 76 0 0
+fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
+0 42 2 2 21 10 10 6 0 0
+fn=std::codecvt<char, char, __mbstate_t>::codecvt(unsigned long)
+0 17 1 1 4 0 0 6 1 1
+fn=std::codecvt<wchar_t, char, __mbstate_t>::codecvt(unsigned long)
+0 17 2 2 4 0 0 6 2 2
+fn=std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&)
+0 190 12 12 90 18 18 30 0 0
+fn=std::ctype<char>::_M_widen_init() const
+0 1056 2 2 9 2 2 263 0 0
+fn=std::ctype<char>::ctype(unsigned short const*, bool, unsigned long)
+0 161 8 8 8 1 0 83 9 9
+fn=std::ctype<char>::do_widen(char const*, char const*, char*) const
+0 8 1 1 2 0 0 2 0 0
+fn=std::ctype<char>::do_widen(char) const
+0 2 1 1 1 0 0 0 0 0
+fn=std::ctype<wchar_t> const& std::use_facet<std::ctype<wchar_t> >(std::locale const&)
+0 76 2 2 36 0 0 12 0 0
+fn=std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const
+0 129 6 6 12 0 0 0 0 0
+fn=std::ctype<wchar_t>::_M_initialize_ctype()
+0 2757 4 4 5 0 0 810 20 20
+fn=std::ctype<wchar_t>::ctype(unsigned long)
+0 19 2 2 3 0 0 7 1 1
+fn=std::error_category::error_category()
+0 12 1 1 6 1 0 3 0 0
+fn=std::error_category::~error_category()
+0 12 1 1 6 1 1 3 0 0
+fn=std::future_category()
+0 21 3 3 2 1 1 6 0 0
+fn=std::ios_base::Init::Init()
+0 270 34 32 41 6 1 168 16 13
+fn=std::ios_base::Init::~Init()
+0 24 3 3 9 7 7 7 0 0
+fn=std::ios_base::_M_init()
+0 144 2 2 24 0 0 64 0 0
+fn=std::ios_base::ios_base()
+0 472 3 3 8 0 0 216 31 26
+fn=std::locale::_Impl::_Impl(unsigned long)
+0 819 66 66 132 12 1 406 44 44
+fn=std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*)
+0 7448 7 7 2716 0 0 224 0 0
+fn=std::locale::facet::_S_create_c_locale(__locale_struct*&, char const*, __locale_struct*)
+0 9 1 1 2 0 0 3 0 0
+fn=std::locale::facet::_S_get_c_locale()
+0 146 6 6 80 13 13 17 0 0
+fn=std::locale::facet::_S_get_c_name()
+0 10 1 1 5 0 0 0 0 0
+fn=std::locale::id::_M_id() const
+0 760 6 6 248 17 14 56 0 0
+fn=std::locale::locale()
+0 462 4 4 176 0 0 132 2 1
+fn=std::locale::operator=(std::locale const&)
+0 136 2 2 56 0 0 24 0 0
+fn=std::locale::~locale()
+0 96 1 1 40 0 0 16 0 0
+fn=std::messages<char>::messages(unsigned long)
+0 19 2 2 4 0 0 8 0 0
+fn=std::messages<wchar_t>::messages(unsigned long)
+0 19 2 2 4 0 0 8 0 0
+fn=std::moneypunct<char, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 112 5 5 37 1 1 31 0 0
+fn=std::moneypunct<char, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 112 5 5 37 0 0 31 0 0
+fn=std::moneypunct<wchar_t, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 108 6 6 29 0 0 32 0 0
+fn=std::moneypunct<wchar_t, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 108 6 6 29 0 0 32 0 0
+fn=std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > const& std::use_facet<std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+0 76 1 1 36 0 0 12 0 0
+fn=std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > const& std::use_facet<std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+0 76 1 1 36 0 0 12 0 0
+fn=std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > const& std::use_facet<std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+0 76 2 2 36 0 0 12 0 0
+fn=std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const
+0 36 5 5 6 0 0 6 0 0
+fn=std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > const& std::use_facet<std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+0 76 2 2 36 0 0 12 0 0
+fn=std::numpunct<char>::_M_initialize_numpunct(__locale_struct*)
+0 413 4 4 136 3 2 75 0 0
+fn=std::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*)
+0 349 6 6 73 0 0 75 3 3
+fn=std::ostream& std::ostream::_M_insert<double>(double)
+0 303 24 24 124 19 18 50 0 0
+fn=std::ostream::flush()
+0 406 2 2 203 12 12 58 0 0
+fn=std::ostream::put(char)
+0 884 5 5 364 1 1 130 0 0
+fn=std::ostream::sentry::sentry(std::ostream&)
+0 1173 3 3 408 18 18 255 0 0
+fn=std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) cons
+0 724 30 30 161 11 11 185 0 0
+fn=std::vector<KHJ::thesis::heap_node::heap_awh_node<long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long>*> >::operator=(std::vector<KHJ::thesis::heap_node::heap_awh_node<long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long>*> > co
+0 30312 4 4 9262 0 0 5052 25 18
+fn=strcasecmp
+0 7 3 3 3 1 1 1 0 0
+fn=strchrnul
+0 240 2 2 24 0 0 0 0 0
+fn=strcmp
+0 131823 6 6 39005 233 135 0 0 0
+fn=strlen
+0 2875 14 14 339 20 20 0 0 0
+fn=strncasecmp
+0 6 2 2 3 0 0 0 0 0
+fn=strsep
+0 914 2 2 148 0 0 1 0 0
+fn=systrim.isra.1
+0 58 4 4 22 4 0 11 1 0
+fn=time
+0 61 3 3 5 1 1 5 0 0
+fn=uname
+0 5 1 1 1 0 0 0 0 0
+fn=uselocale
+0 294 7 7 126 37 32 56 2 1
+fn=version_check_doit
+0 10 2 1 4 0 0 2 0 0
+fn=vfprintf
+0 1722 122 122 408 48 47 414 42 42
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long>* const&>(KHJ::thesis::heap_node::heap_awh_node<long>* const&)
+0 60783 13 13 14592 223 92 12176 490 343
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long>*>(KHJ::thesis::heap_node::heap_awh_node<long>*&&)
+0 1267 4 4 293 18 4 250 18 18
+fn=void std::vector<long, std::allocator<long> >::_M_emplace_back_aux<long const&>(long const&)
+0 1183 5 5 251 18 4 250 33 19
+fn=vsnprintf
+0 264 6 6 48 0 0 72 20 16
+fn=wctob
+0 2432 2 2 768 0 0 640 0 0
+fn=wctype_l
+0 876 2 2 139 4 0 153 0 0
+fn=write
+0 52 1 1 26 0 0 0 0 0
+summary: 7320677118 2956 2943 1983791478 68015255 30317692 846368622 34655003 14769776
