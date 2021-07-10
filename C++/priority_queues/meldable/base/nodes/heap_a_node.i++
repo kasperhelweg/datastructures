@@ -1,0 +1,249 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace heap_node  {
+      
+      /*
+       *                                      
+       * N o d e T y p e A  \  P u b l i c                
+       *
+       */
+      
+      /**
+       * Constructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      heap_a_node<E>::heap_a_node( const E& e ) : 
+        element_( e ), color_( 0 ), left_( nullptr ) , right_( nullptr ) { }
+
+      /**
+       * Constructor with color.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      heap_a_node<E>::heap_a_node( const E& e, bool c ) : 
+        element_( e ), color_( c ), left_( nullptr ) , right_( nullptr ) { }
+           
+      /**
+       * DeConstructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      heap_a_node<E>::~heap_a_node( ) { 
+        
+      }    
+      
+      /**
+       * Comparison operators
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+    
+      template <typename E>
+      inline bool heap_a_node<E>::operator<(const N& O) const
+      {
+        return element_ < O.element_;
+      }
+
+      template <typename E>
+      inline bool heap_a_node<E>::operator>(const N& O) const
+      {
+        return element_ > O.element_;
+      }
+
+      template <typename E>
+      inline bool heap_a_node<E>::operator==(const N& O) const
+      {
+        return element_ == O.element_;
+      }
+      
+      template <typename E>
+      inline bool heap_a_node<E>::operator!=(const N& O) const
+      {
+        return element_ != O.element_;
+      }
+
+      template <typename E>
+      inline bool heap_a_node<E>::operator<=(const N& O) const
+      {
+        return element_ <= O.element_;
+      }
+
+      template <typename E>
+      inline bool heap_a_node<E>::operator>=(const N& O) const
+      {
+        return element_ >= O.element_;
+      }
+  
+      
+      /**
+       * is_root( )
+       * 
+       * complexity is O(1) requiring 1 element comp.
+       * @author KHJ
+       *
+       */
+
+      template <typename E>
+      bool heap_a_node<E>::is_root( ) const
+      {
+        return right_ == nullptr;
+      }
+
+      /**
+       * is_leaf( )
+       * 
+       * complexity is O(1) requiring 1 element comp.
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      bool heap_a_node<E>::is_leaf( ) const
+      {
+        return left_ == nullptr;
+      }
+      
+      /**
+       * parent( )
+       * 
+       * complexity is O(1).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      typename heap_a_node<E>::N* heap_a_node<E>::parent( ) const
+      {
+        if( color_ == 0 && !is_root( ) ) { return (*right_).right_; } 
+        else { return right_; }
+      }
+
+      /**
+       * is_left( )
+       * 
+       * complexity is O(1).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      bool heap_a_node<E>::is_left( ) const
+      {
+        return color_ == 0;
+      }
+
+      /**
+       * is_right( )
+       * 
+       * complexity is O(1).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      bool heap_a_node<E>::is_right( ) const
+      {
+        return color_ == 1;
+      }
+
+
+      /**
+       * left_child( )
+       * 
+       * complexity is O(1).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      typename heap_a_node<E>::N* heap_a_node<E>::left_child( ) const
+      {
+        return left_;
+      }
+
+      /**
+       * right_child( )
+       * 
+       * complexity is O(1).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      typename heap_a_node<E>::N* heap_a_node<E>::right_child( ) const
+      {
+        return (*left_).right_;
+      }
+
+      /**
+       * find_root( )
+       * 
+       * complexity is O(lg n).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      typename heap_a_node<E>::N* heap_a_node<E>::find_root( ) const
+      {
+        N* r((N*)this);  
+        while( (*r).right_ != nullptr ) { 
+          r = (*r).right_; 
+        }
+        
+        assert((*r).is_root( ));
+        return r;
+      }
+
+      /**
+       * height( )
+       * 
+       * complexity is O(lg n).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      int heap_a_node<E>::height( ) const
+      {
+        int h = 0;
+        N* r((N*)this);  
+        while( !(*r).is_leaf( ) ) {
+          r = (*r).left_; h++;
+        }
+        assert((*r).is_leaf( ));
+        return h;
+      }
+
+      /**
+       * size( )
+       * 
+       * complexity is O(lg n).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      int heap_a_node<E>::size( ) const
+      {
+        return pow( 2, height( ) + 1 ) - 1;
+      }
+
+      /**
+       * element( )
+       * 
+       * complexity is O(lg n).
+       * @author KHJ
+       *
+       */
+      template <typename E>
+      E heap_a_node<E>::element( ) const
+      {
+        return element_;
+      }
+    }
+  }
+}

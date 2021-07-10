@@ -1,0 +1,465 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace root_registry  {
+      /**
+       * Constructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      regular_root_registry<N, M, S>::regular_root_registry( ) : size_( 0 ), top_( nullptr ), root_table_( ), hi_( ), wall_( )
+      { }
+
+      /**
+       * DeConstructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      regular_root_registry<N, M, S>::~regular_root_registry( ) 
+      { }
+      
+      /**
+       * top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      N* regular_root_registry<N, M, S>::top( ) const
+      { 
+        return top_; 
+      }
+
+      /**
+       * size( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      int regular_root_registry<N, M, S>::size( ) const
+      { 
+        //return root_table_.size( ); 
+        return size_; 
+      }
+
+      template<typename N, typename M, typename S>
+      bool regular_root_registry<N, M, S>::empty( ) const
+      { 
+        return size_ == 0;
+      }
+      
+      /**
+       * insert( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::inject( N* Q )
+      { 
+        I k = root_table_.end( );
+        I j = root_table_.end( );
+        
+        if( !wall_.empty( ) ) k = wall_.front( );
+        if( !hi_.empty( ) )   j = hi_.front( );   
+        if( (j != root_table_.end( ) && j != k ) && 
+            ( k == root_table_.end( ) || (*j).p_ < (*k).p_ ) ) {
+          transfer_( j, Q ); j++;
+          if( !hi_.empty( ) ) 
+            hi_.pop_front( );
+          if( (*j).size( ) == 2  ) 
+            hi_.push_front( j );
+          reduce_( j );
+          if( (*(*j).begin( )).b_ > 0 ) 
+            wall_.push_front( j );
+          if( (*--j).size_ == 0 && j != root_table_.begin( ) )
+            root_table_.shrink( j );
+        } else {
+          root_table_.inject( Q );
+          if( k != root_table_.end( ) ) {
+            reduce_( k );
+            if( (*(*k).begin( )).b_ == 0 )
+              wall_.pop_front( );
+          }
+          if( (*root_table_.begin( )).size( ) == 2  ) 
+            hi_.push_front( begin( ) );           
+        }
+        if( top_ == nullptr || 
+            M::compare_( 
+              (*Q).element(), (*top_).element() ) ) { 
+          top_ = Q; 
+        }
+        size_++;
+      }
+
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::arbitrary_inject_( N* Q, int i )
+      { 
+        std::vector<N*> surplus;
+      
+        surplus.push_back( eject( ) );
+        surplus.push_back( eject( ) );
+
+        I it  = begin( );
+        auto hit = hi_.begin( );
+        auto wit = wall_.begin( );
+        iterator_type j = end( ); 
+        iterator_type k = end( ); 
+    
+        while( it != end( ) && (*it).p_ < i ) ++it; 
+        if( (*it).p_ > i )  { 
+          root_table_.add_table_node( it, i ); --it;
+        }
+
+        if( !(*it).empty( ) ) { 
+          reduce_to_zero_( it  );
+          if( (*it).size( ) == 2 ) {
+            transfer_( it, surplus.back( ) );
+            for( hit = hi_.begin( ); hit != hi_.end( ); hit++ ) {
+              if( (*hit) == it ) {
+                hit = hi_.erase( hit );
+                break;
+              }
+            }
+            if( (*++it).size( ) == 2 ) {
+              for( hit = hi_.begin( ); hit != hi_.end( ); hit++ ) {
+                if( (*(*hit)).p_ > (*it).p_ ) break;
+              }
+              hi_.insert( hit, it );
+            }
+            for( wit = wall_.begin( ); wit != wall_.end( ); wit++ ) {
+              if( (*(*wit)).p_ >=  (*it).p_ )
+                break; 
+            }
+            if( (wit != wall_.end() && (*(*wit)).p_ !=  (*it).p_) || wit == wall_.end() )
+              wall_.insert( wit, it );
+            surplus.pop_back( ); 
+            size_++; --it;
+          }
+        }
+        for( hit = hi_.begin( ); hit != hi_.end( ); hit++ ) {
+          if( (*(*hit)).p_ >  i  ) {
+            if(  (*(*(*hit)).begin( )).b_ == 0)
+              j = *hit;
+            break;
+          }          
+        }
+        root_table_.insert_root( it, Q, nullptr, 0, 0 ); 
+        if( (*it).size( ) == 2 ) {
+          transfer_( it, surplus.back( ) );
+          if( (*++it).size( ) == 2 ) {
+            for( hit = hi_.begin(); hit != hi_.end( ); hit++ ) {
+              if( (*(*hit)).p_ > (*it).p_ ) break;
+            }
+            hi_.insert( hit, it );
+          }   
+          for( wit = wall_.begin( ); wit != wall_.end( ); wit++ ) {
+            if( (*(*wit)).p_ >=  (*it).p_ )
+              break; 
+          }
+          if( (wit != wall_.end() && (*(*wit)).p_ !=  (*it).p_) || wit == wall_.end() )
+            wall_.insert( wit, it );
+          surplus.pop_back( );    
+          size_++; --it;
+          if( it != begin( ) ) it = root_table_.shrink( it ); else ++it;
+        }
+        
+        if( (*(*it).begin( )).b_ > 0 )
+          reduce_to_zero_( it );
+        for( it = begin( ); it != end( ); it++ ) {
+          if( (*it).p_ >  i  ) {
+            if( (*(*it).begin( )).b_ > 0)
+              k = it;
+            break;
+          }
+        }
+        if( (j != end( )) && ( k == end( ) || (*j).p_ < (*k).p_ ) ) {
+          transfer_( j, surplus.back( ) );
+          for( hit = hi_.begin( ); hit != hi_.end( ); hit++ ) {
+            if( (*hit) == j ) {
+              hit = hi_.erase( hit );
+              break;
+            }
+          }
+          surplus.pop_back( );    
+          size_++;
+          
+          if( j != begin( ) && (*j).size() == 0 )  
+            j = root_table_.shrink( j );
+          else 
+            ++j;
+          if( (*j).size( ) == 2 ) {
+            for( hit = hi_.begin(); hit != hi_.end( ); hit++ ) {
+              if( (*(*hit)).p_ > (*j).p_ ) break;
+            }
+            hi_.insert( hit, j );
+          }
+          for( wit = wall_.begin( ); wit != wall_.end( ); wit++ ) {
+            if( (*(*wit)).p_ >=  (*j).p_ )
+              break; 
+          }
+          if( (wit != wall_.end() && (*(*wit)).p_ !=  (*j).p_) || wit == wall_.end() )
+            wall_.insert( wit, j );
+        
+          if( (*(*j).begin()).b_ < i + 2 ) 
+            reduce_to_zero_( j );
+          else 
+            reduce_by_( j, i + 2 );
+        } else if( k != end( ) ) {
+          if( (*(*k).begin()).b_ < i + 1 )
+            reduce_to_zero_( k );
+          else
+            reduce_by_( k, i + 1 );
+        }
+        
+        while( !surplus.empty( ) ) {
+          inject( surplus.back( ) );
+          surplus.pop_back( );
+        }
+      }
+     
+      /**
+       * extract( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      N* regular_root_registry<N, M, S>::eject( )
+      {
+        N* B; I k;; char s;
+        I j = root_table_.begin( );
+                
+        if( (*j).size_ == 0 ) ++j;        
+        if( !wall_.empty( ) && j == wall_.front( ) ) {
+          reduce_( j );
+          if( (*(*j).begin( )).b_ == 0 )
+            wall_.pop_front( );
+        }
+        root_list_node l = root_table_.remove_root( j ); 
+        
+        B = l.hp_;
+        if( j == hi_.front( ) )      
+          hi_.pop_front( );
+        if( !wall_.empty( ) && j  == wall_.front( ) ) 
+          wall_.pop_front( );
+        if( j != root_table_.begin( ) ) {
+          k = --j; 
+          if( (*++j).p_ - 1 > (*k).p_ ) 
+            root_table_.add_table_node( j, (*j).p_ - 1 ); --j;
+          N** st = M::split( l.hp_ ); 
+          s  = l.bittrace_ & (1 << 0);
+          swap_nodes_( st, 0, s );
+          root_table_.insert_root( j, st[1], nullptr, 0, 0 );       
+          root_table_.insert_root( j, st[0], l.sp_, l.b_, l.bittrace_ >> 1 );         
+          delete[] st;
+          hi_.push_front( j );   
+          if( (*(*j).begin( )).b_ > 0 ) 
+            wall_.push_front( j );
+          if( (*++j).size_ == 0  )
+            root_table_.shrink( j );
+
+        }
+        size_--;
+        return B;
+      }
+      
+      /**
+       * consolidate( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::transfer_( I j, N* Q )
+      {
+        I k = std::next( j ); 
+        if( (*k).p_ != (*j).p_ + 1 ) { 
+          root_table_.add_table_node( k, (*j).p_ + 1 ); --k;
+        }        
+        root_list_node l0 = root_table_.remove_root( j ); 
+        root_list_node l1 = root_table_.remove_root( j );
+        M::join_heaps( Q, l0.hp_, l1.hp_ );        
+        root_table_.insert_root( k, Q, Q, (*j).p_ + 1, 0 );
+      }
+      
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::reduce_( I p )
+      {
+        RLI l = (*p).begin( );  
+        unsigned short lvl = (*p).p_ - (*l).b_; 
+        
+        if( (*l).sp_ != nullptr ) {
+          char d = M::incremental_siftdown( (*l).sp_ ); 
+          if( d != -1 ) {
+            (*l).bittrace_ |= d << lvl;
+            if( lvl == 0 )
+              (*l).hp_ = (*(*l).sp_).parent( );
+          } else {
+            (*l).sp_ = nullptr; 
+            (*l).bittrace_ = 0;
+          }
+        }
+        (*l).b_--;
+      }
+
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::reduce_by_( I p, int k )
+      {
+        RLI l = (*p).begin( );  
+        while( k > 0 ) {
+          unsigned short lvl = (*p).p_ - (*l).b_; 
+          if( (*l).sp_ != nullptr ) {
+            char d = M::incremental_siftdown( (*l).sp_ ); 
+            if( d != -1 ) {
+              (*l).bittrace_ |= d << lvl;
+              if( lvl == 0 )
+                (*l).hp_ = (*(*l).sp_).parent( );
+            } else {
+              (*l).sp_ = nullptr; 
+              (*l).bittrace_ = 0;
+            }
+          }
+          --(*l).b_;
+          --k;
+        }
+        if( (*l).b_ == 0 ) {
+          for( auto it = wall_.begin( ); it != wall_.end( ); it++ ) {
+            if( (*it) == p ) {
+              wall_.erase( it );
+              break;
+            } } }
+      }
+
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::reduce_to_zero_( I p )
+      {
+        RLI n   = (*p).begin( );  
+        auto it = wall_.begin( );
+        if( (*n).sp_ != nullptr ) {
+          M::siftdown( (*n).sp_ );
+          (*n).hp_ = (*(*n).sp_).find_root(); 
+          (*n).sp_ = nullptr; 
+          (*n).bittrace_ = 0;
+        } (*n).b_  = 0;
+        while( it != wall_.end( ) && (*it) != p ) it++;
+        if( it != wall_.end( ) ) wall_.erase( it );
+      }
+      
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::meld( regular_root_registry& other )
+      {
+        // Only supported if other.size_ <= this.size_
+        int s = other.size( );        
+        I vit = other.begin( );
+        while( vit != other.end( ) ) {
+          while( (*vit).size( ) != 0 ) {
+            root_list_node n = other.root_table_.remove_root( vit );
+            if( n.sp_ != nullptr ) {
+              M::siftdown( n.sp_ );
+              n.hp_ = (*n.sp_).find_root(); 
+              n.sp_ = nullptr; 
+              n.bittrace_ = 0;
+            } n.b_  = 0;
+            if( top_ == nullptr || 
+                M::compare_( (*(n.hp_)).element(),  (*top_).element() ) )  {          
+              top_ = n.hp_; } 
+            arbitrary_inject_( n.hp_, (*vit).p_ );
+          }
+          if( vit == other.begin( )) ++vit;             
+          else vit = other.root_table_.shrink( vit );
+        }
+        other.size_ = 0;
+        other.top_ = nullptr;
+        other.hi_.clear();
+        other.wall_.clear();
+                
+        size_ += s;
+      }
+      
+      /**
+       * update_top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::update_top( )
+      {
+        top_ = nullptr;
+        for( auto it = root_table_.begin( ) ; it != root_table_.end( ) ; it++ ) {
+          for( auto vit = (*it).begin( ) ; vit != (*it).end( ) ; vit++ ) {
+            if( top_ == nullptr || 
+                M::compare_( (*(*vit).hp_).element(),  (*top_).element() ) )  {          
+              top_ = (*vit).hp_; } } 
+        }
+      }
+
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::update_top( N* Q )
+      {
+        top_ = Q;
+      }
+       
+      template<typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::print( ) const
+      {
+        int v = 0;
+
+        std::cout << "size: " << size( ) << std::endl;    
+        if( top_ != nullptr ) std::cout << "top: " << (*top_).element() << std::endl;     
+        root_table_.print( );
+        std::cout << "--------------" << std::endl;
+        for( auto it = hi_.begin( ); it != hi_.end( ); ++it){
+          std::cout << "hi: "  << (*(*it)).p_ << " ";
+        }
+        std::cout << std::endl;
+        std::cout << "--------------" << std::endl;
+        for( auto it = wall_.begin( ); it != wall_.end( ); ++it){
+          std::cout << "wall: "  << (*(*it)).p_ << " ";
+          
+        }
+        std::cout << std::endl;
+        std::cout << "--------------" << std::endl;
+        
+        for( auto it = root_table_.begin( ); it != root_table_.end( ); ++it) {
+          v += (*it).size( ) * (pow( 2, (*it).p_ + 1 ) - 1);
+        }
+
+        std::cout << "value: " << v << std::endl;
+        std::cout << "--------------" << std::endl;
+    
+        /*
+          for( auto it = root_table_.begin( ); it != root_table_.end( ); ++it) {
+          for( auto vit = (*it).begin( ); vit != (*it).end( ); ++vit) {
+          //std::cout << "----P-----" << (*vit).hp_->right_child()  << std::endl;
+          //utils.breadth_first_draw( (*vit).hp_ );
+          }
+        } 
+        */
+        std::cout << std::endl;  
+      }
+
+      // swap aux
+      template <typename N, typename M, typename S>
+      void regular_root_registry<N, M, S>::swap_nodes_ (N* nodes[], int i1, int i2) 
+      {
+        N* temp   = nodes[i1];
+        nodes[i1] = nodes[i2];
+        nodes[i2] = temp;
+      }
+    }
+  }
+}

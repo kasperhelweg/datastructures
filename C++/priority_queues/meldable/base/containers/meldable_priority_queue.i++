@@ -1,0 +1,120 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace priority_queue  {
+      
+      template<typename V, typename C, typename A, typename E, typename R>
+      V meldable_priority_queue<V, C, A, E, R>::top(  ) const
+      {
+        E* S = realizer_.find_min( );
+        return S->element( );
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      E* meldable_priority_queue<V, C, A, E, R>::push( E* S ) 
+      {
+        realizer_.insert( S );
+        return S;
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      E* meldable_priority_queue<V, C, A, E, R>::push( const V& val ) 
+      {
+        E* S = buy_( val );
+        
+        realizer_.insert( S );
+        return S;
+      }
+    
+      template<typename V, typename C, typename A, typename E, typename R>
+      V meldable_priority_queue<V, C, A, E, R>::pop( ) 
+      {
+        E* S  = realizer_.erase_min( );
+        V val = S->element( );
+        
+        sell_( S );
+        return val;
+      }
+      
+      template<typename V, typename C, typename A, typename E, typename R>
+      E* meldable_priority_queue<V, C, A, E, R>::extract( ) 
+      {
+        return realizer_.erase_min( );
+      }
+ 
+      template<typename V, typename C, typename A, typename E, typename R>
+      void meldable_priority_queue<V, C, A, E, R>::erase( E* P ) 
+      {
+        realizer_.erase( P );
+        sell_( P );
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      void meldable_priority_queue<V, C, A, E, R>::decrease( E* e, V v ) 
+      {
+        realizer_.decrease_key( e, v );
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      void meldable_priority_queue<V, C, A, E, R>::meld( meldable_priority_queue& other ) 
+      {
+        realizer_.meld( other.realizer_ );
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      E* meldable_priority_queue<V, C, A, E, R>::borrow( ) 
+      {
+        return realizer_.borrow( );
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      int meldable_priority_queue<V, C, A, E, R>::size( ) const
+      {
+        return realizer_.size( );
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      bool meldable_priority_queue<V, C, A, E, R>::empty( ) const
+      {
+        return realizer_.empty( );
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      void meldable_priority_queue<V, C, A, E, R>::clear(  ) 
+      {
+        if( realizer_.size( ) != 0 ) {
+          for( int i = realizer_.size( ); i > 0; i-- ) {
+            sell_( extract( ) );
+          }
+        }
+      }
+
+      template<typename V, typename C, typename A, typename E, typename R>
+      void meldable_priority_queue<V, C, A, E, R>::print( ) 
+      {
+        realizer_.print( );
+      }
+
+      // Buy a node. Heap memory is the currency.
+      template<typename V, typename C, typename A, typename E, typename R>
+      E* meldable_priority_queue<V, C, A, E, R>::buy_( const V& val ) 
+      {
+        E* S = allocator_.allocate( 1 );
+        try {
+          allocator_.construct( S, E( val ) );
+        }
+        catch(...) {
+          allocator_.deallocate( S, 1 );
+          throw;
+        }
+        return S;
+      }
+         
+      template<typename V, typename C, typename A, typename E, typename R>
+      void meldable_priority_queue<V, C, A, E, R>::sell_( E* S ) 
+      {
+        allocator_.destroy( S ); allocator_.deallocate( S, 1 ); 
+        S = nullptr;
+      }
+    }
+  }
+}

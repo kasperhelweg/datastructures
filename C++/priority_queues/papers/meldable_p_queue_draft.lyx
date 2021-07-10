@@ -1,0 +1,293 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage [T1]{fontenc}
+\usepackage {concrete}
+\usepackage{amsmath}
+\usepackage{phaistos}
+\usepackage{tikz}
+
+\DeclareMathSymbol{\subfactorial}{\mathord}{operators}{"BD}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter cmtt
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Meldable Priority Queues in LOGSPACE/L
+\end_layout
+
+\begin_layout Abstract
+We describe the API ...
+\end_layout
+
+\begin_layout Section
+The API
+\end_layout
+
+\begin_layout Standard
+In the LOGSPACE/L library, a 
+\emph on
+meldable priority queue 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ 
+\emph default
+has the following API:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\noun on
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.top
+\noun default
+
+\begin_inset Formula $(\:)$
+\end_inset
+
+ returns a pointer to the element in queue 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ whose key is a minimum.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+\noun on
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.
+\series default
+pop
+\noun default
+
+\begin_inset Formula $(\:)$
+\end_inset
+
+ removes a single element from queue 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ whose key is a minimum and returns a pointer to it.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+\noun on
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+
+\series default
+.push
+\noun default
+
+\begin_inset Formula $(s)$
+\end_inset
+
+ inserts element 
+\begin_inset Formula $s$
+\end_inset
+
+ into queue 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\noun on
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.meld
+\noun default
+
+\begin_inset Formula $(Q^{\prime})$
+\end_inset
+
+ creates and returns a new queue that is the union of queues 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{Q}^{\prime}$
+\end_inset
+
+.
+ This operation destroys 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{Q}^{\prime}$
+\end_inset
+
+.
+ Note that the sets maintained in our application are assumed to be disjoint.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\noun on
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.decrease
+\noun default
+
+\begin_inset Formula $(s,k)$
+\end_inset
+
+ assigns key 
+\begin_inset Formula $k$
+\end_inset
+
+ to element 
+\begin_inset Formula $s$
+\end_inset
+
+ in queue 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.
+ The new key 
+\begin_inset Formula $k$
+\end_inset
+
+ is assumed to be strictly less than the current key.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\noun on
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.erase
+\noun default
+
+\begin_inset Formula $(s)$
+\end_inset
+
+ removes element 
+\begin_inset Formula $s$
+\end_inset
+
+ from queue 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\noun on
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+.borrow
+\noun default
+
+\begin_inset Formula $(\:)$
+\end_inset
+
+ removes a single unspecified element from queue 
+\begin_inset Formula $\mathcal{Q}$
+\end_inset
+
+ and returns a pointer to it.
+\end_layout
+
+\end_body
+\end_document

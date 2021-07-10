@@ -1,0 +1,1160 @@
+desc: I1 cache:         32768 B, 64 B, 8-way associative
+desc: D1 cache:         32768 B, 64 B, 8-way associative
+desc: LL cache:         4194304 B, 64 B, 16-way associative
+cmd: ./magic_q.out
+events: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./bench/benchmarks.h++
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+18 10 0 0 4 0 0 3 0 0 0 0 0 0
+26 35 5 5 9 1 1 16 3 0 0 0 0 0
+129 10 2 2 0 0 0 6 0 0 0 0 0 0
+133 400007 1 1 0 0 0 100002 0 0 100001 12 0 0
+135 200002 0 0 0 0 0 100001 0 0 0 0 0 0
+140 200004 0 0 100002 0 0 0 0 0 100002 9 0 0
+141 100003 0 0 0 0 0 100001 0 0 0 0 0 0
+145 300005 0 0 200003 0 0 0 0 0 100002 2 0 0
+146 400004 1 1 400004 124893 52247 0 0 0 0 0 0 0
+151 8 0 0 7 1 1 0 0 0 0 0 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./containers/meldable_priority_queue.i++
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+85 300005 0 0 100001 0 0 0 0 0 100002 5 0 0
+fn=main
+85 2 0 0 0 0 0 0 0 0 1 0 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./nodes/heap_awh_node.i++
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+20 500005 1 1 100001 12507 4729 400004 0 0 0 0 0 0
+83 4571298 2 2 820257 72655 20355 0 0 0 820219 49972 0 0
+84 670219 0 0 0 0 0 0 0 0 0 0 0 0
+153 499983 0 0 149995 0 0 0 0 0 149995 50154 0 0
+fn=KHJ::thesis::queue::magical_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator
+83 399988 1 1 0 0 0 0 0 0 199994 21 0 0
+153 6588208 1 1 1647052 46 0 0 0 0 1647052 100801 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+153 149854 0 0 0 0 0 0 0 0 74927 14646 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./nodes/node_awh_modifier.h++
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+90 100001 0 0 0 0 0 100001 0 0 0 0 0 0
+111 8883663 2 2 3721569 338989 21519 0 0 0 2581047 22 0 0
+164 49999 0 0 49999 0 0 0 0 0 0 0 0 0
+165 1575005 0 0 49999 0 0 1240018 0 0 0 0 0 0
+170 1240523 1 1 1240523 0 0 0 0 0 0 0 0 0
+171 2481046 0 0 1240523 0 0 1240523 0 0 0 0 0 0
+172 2381131 0 0 0 0 0 1240523 0 0 0 0 0 0
+177 2681040 1 1 0 0 0 0 0 0 1340520 101845 0 0
+187 49998 0 0 0 0 0 49998 0 0 0 0 0 0
+188 99996 0 0 49998 0 0 49998 0 0 0 0 0 0
+189 49998 0 0 0 0 0 49998 0 0 0 0 0 0
+191 49998 0 0 0 0 0 49998 0 0 0 0 0 0
+192 99996 0 0 49998 0 0 49998 0 0 0 0 0 0
+194 299988 0 0 99996 4 2 49998 4 2 49998 0 0 0
+203 49999 0 0 49999 0 0 0 0 0 0 0 0 0
+205 49999 1 1 0 0 0 49999 0 0 0 0 0 0
+206 99998 0 0 49999 0 0 49999 0 0 0 0 0 0
+207 49999 0 0 0 0 0 49999 4 2 0 0 0 0
+209 99998 0 0 49999 0 0 49999 0 0 0 0 0 0
+210 49999 0 0 0 0 0 49999 0 0 0 0 0 0
+212 199996 0 0 49999 3 1 49999 4 3 49999 0 0 0
+216 3421496 1 1 1140526 0 0 0 0 0 1710748 569252 0 0
+226 285234 0 0 0 0 0 285234 0 0 0 0 0 0
+227 570468 0 0 285234 0 0 285234 0 0 0 0 0 0
+228 285234 0 0 0 0 0 285234 0 0 0 0 0 0
+229 285234 0 0 0 0 0 285234 0 0 0 0 0 0
+230 570468 0 0 285234 0 0 285234 0 0 0 0 0 0
+232 1426170 0 0 570468 219336 5584 285234 194848 1851 285234 0 0 0
+233 1365900 0 0 530288 4764 1899 265144 4497 1698 285234 20434 0 0
+243 284988 1 1 284988 0 0 0 0 0 0 0 0 0
+245 284988 0 0 0 0 0 284988 0 0 0 0 0 0
+246 569976 1 1 284988 0 0 284988 0 0 0 0 0 0
+247 284988 0 0 0 0 0 284988 0 0 0 0 0 0
+248 284988 0 0 0 0 0 284988 0 0 0 0 0 0
+249 569976 0 0 284988 0 0 284988 23596 6595 0 0 0 0
+251 1424940 0 0 569976 219143 5419 284988 194534 1746 284988 2 0 0
+252 1365060 0 0 530056 4712 2055 265028 3960 1527 284988 5497 0 0
+255 1140608 0 0 0 0 0 0 0 0 570304 13 0 0
+265 285022 0 0 0 0 0 285022 0 0 0 0 0 0
+266 570044 0 0 285022 0 0 285022 0 0 0 0 0 0
+267 285022 0 0 0 0 0 285022 0 0 0 0 0 0
+268 285022 0 0 0 0 0 285022 0 0 0 0 0 0
+269 570044 0 0 285022 0 0 285022 0 0 0 0 0 0
+271 1140088 0 0 285022 194464 1757 285022 218958 5331 285022 2 0 0
+272 1649964 0 0 1099976 4679 1912 264966 4416 1697 285022 20110 0 0
+284 285282 1 1 285282 0 0 0 0 0 0 0 0 0
+286 285282 0 0 0 0 0 285282 0 0 0 0 0 0
+287 570564 1 1 285282 0 0 285282 0 0 0 0 0 0
+288 285282 0 0 0 0 0 285282 0 0 0 0 0 0
+289 285282 0 0 0 0 0 285282 0 0 0 0 0 0
+290 570564 0 0 285282 0 0 285282 23374 6662 0 0 0 0
+292 1141128 0 0 285282 194599 1877 285282 219283 5432 285282 0 0 0
+293 1936536 0 0 1100836 4633 1966 265136 4068 1537 285282 5670 0 0
+fn=KHJ::thesis::queue::magical_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator
+56 199994 0 0 99997 0 0 99997 0 0 0 0 0 0
+57 99997 0 0 0 0 0 99997 12 0 0 0 0 0
+58 199994 0 0 99997 0 0 99997 1 0 0 0 0 0
+59 199994 1 1 99997 0 0 99997 0 0 0 0 0 0
+61 499985 0 0 0 0 0 0 0 0 199994 37 0 0
+62 199920 0 0 0 0 0 0 0 0 99960 10 0 0
+71 199920 1 1 0 0 0 0 0 0 99960 24955 0 0
+72 199920 1 1 99960 18585 0 99960 17759 0 0 0 0 0
+77 99997 0 0 99997 0 0 0 0 0 0 0 0 0
+81 99997 0 0 0 0 0 99997 0 0 0 0 0 0
+82 99997 0 0 0 0 0 99997 0 0 0 0 0 0
+83 299991 0 0 99997 0 0 99997 0 0 0 0 0 0
+111 199994 0 0 0 0 0 0 0 0 99997 6 0 0
+122 2517522 2 2 99960 0 0 0 0 0 1108821 11 0 0
+124 5417555 1 1 3250533 411858 5162 1083511 0 0 0 0 0 0
+125 4334044 0 0 2167022 0 0 0 0 0 0 0 0 0
+130 3201310 0 0 1034288 0 0 0 0 0 1083511 49978 0 0
+164 51017 0 0 51017 0 0 0 0 0 0 0 0 0
+165 1548855 1 1 0 0 0 1032570 0 0 0 0 0 0
+170 1034288 1 1 1034288 0 0 0 0 0 0 0 0 0
+171 3077400 0 0 1034288 0 0 1034288 0 0 0 0 0 0
+172 1034288 0 0 0 0 0 1034288 0 0 0 0 0 0
+177 2268298 1 1 99861 0 0 0 0 0 1134149 49978 0 0
+184 48844 0 0 48844 0 0 0 0 0 0 0 0 0
+187 48844 0 0 0 0 0 48844 0 0 0 0 0 0
+188 97688 0 0 48844 0 0 48844 0 0 0 0 0 0
+189 48844 0 0 0 0 0 48844 0 0 0 0 0 0
+191 48844 0 0 0 0 0 48844 0 0 0 0 0 0
+192 97688 0 0 0 0 0 48844 0 0 0 0 0 0
+194 560080 0 0 0 0 0 0 0 0 280040 12408 0 0
+205 51017 0 0 0 0 0 51017 0 0 0 0 0 0
+206 102034 0 0 51017 0 0 51017 0 0 0 0 0 0
+207 51017 1 1 0 0 0 51017 0 0 0 0 0 0
+209 102034 0 0 51017 0 0 51017 0 0 0 0 0 0
+210 51017 0 0 0 0 0 51017 0 0 0 0 0 0
+212 254464 0 0 101620 17071 0 50810 16576 0 51017 210 0 0
+216 2796328 1 1 1398164 0 0 0 0 0 1398164 232213 0 0
+224 231196 0 0 231196 0 0 0 0 0 0 0 0 0
+226 231196 0 0 0 0 0 231196 0 0 0 0 0 0
+227 462392 0 0 231196 0 0 231196 0 0 0 0 0 0
+228 231196 0 0 0 0 0 231196 0 0 0 0 0 0
+229 231196 0 0 0 0 0 231196 0 0 0 0 0 0
+230 462392 0 0 231196 0 0 231196 0 0 0 0 0 0
+232 1204824 0 0 511236 0 0 231196 0 0 231196 0 0 0
+245 232541 1 1 0 0 0 232541 0 0 0 0 0 0
+246 465082 1 1 232541 0 0 232541 0 0 0 0 0 0
+247 232541 0 0 0 0 0 232541 0 0 0 0 0 0
+248 232541 0 0 0 0 0 232541 0 0 0 0 0 0
+249 465082 0 0 232541 0 0 232541 0 0 0 0 0 0
+251 1162705 0 0 465082 0 0 232541 0 0 232541 0 0 0
+252 1125373 0 0 440194 191354 2516 220097 190981 2515 232541 12528 0 0
+255 941380 0 0 470690 0 0 0 0 0 470690 234287 0 0
+263 232727 0 0 232727 0 0 0 0 0 0 0 0 0
+265 232727 0 0 0 0 0 232727 0 0 0 0 0 0
+266 465454 0 0 232727 0 0 232727 0 0 0 0 0 0
+267 232727 0 0 0 0 0 232727 0 0 0 0 0 0
+268 232727 0 0 0 0 0 232727 0 0 0 0 0 0
+269 465454 0 0 232727 0 0 232727 0 0 0 0 0 0
+271 1163635 1 1 465454 0 0 232727 0 0 232727 0 0 0
+272 1125769 0 0 440210 191436 2569 220105 190835 2568 232727 12694 0 0
+284 237963 1 1 237963 0 0 0 0 0 0 0 0 0
+286 237963 0 0 0 0 0 237963 0 0 0 0 0 0
+287 475926 0 0 237963 0 0 237963 0 0 0 0 0 0
+288 237963 0 0 0 0 0 237963 0 0 0 0 0 0
+289 237963 0 0 0 0 0 237963 0 0 0 0 0 0
+290 475926 0 0 237963 0 0 237963 0 0 0 0 0 0
+292 951852 0 0 237963 0 0 237963 0 0 237963 0 0 0
+293 2402923 1 1 1447731 402757 5044 492539 401410 5097 237963 13519 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+27 149566 0 0 0 0 0 149566 114 0 0 0 0 0
+28 348922 0 0 49790 0 0 299132 59 0 0 0 0 0
+29 149566 0 0 0 0 0 149566 1 0 0 0 0 0
+31 598068 1 1 199356 0 0 149566 0 0 0 0 0 0
+95 398907 2 2 0 0 0 149566 0 0 0 0 0 0
+96 299132 0 0 149566 77 0 149566 0 0 0 0 0 0
+97 598265 1 1 299133 79842 3438 299132 20029 666 0 0 0 0
+99 149566 1 1 0 0 0 149566 80170 3472 0 0 0 0
+100 348922 0 0 149566 0 0 199356 0 0 0 0 0 0
+101 99776 0 0 0 0 0 99776 0 0 0 0 0 0
+103 249341 0 0 99775 0 0 149566 2 0 0 0 0 0
+122 49584 0 0 0 0 0 0 0 0 24792 5 0 0
+124 370944 1 1 247296 651 1 61824 0 0 0 0 0 0
+125 185472 0 0 61824 0 0 0 0 0 0 0 0 0
+130 273502 1 1 25137 0 0 0 0 0 61824 19254 0 0
+164 24272 0 0 24272 0 0 0 0 0 0 0 0 0
+165 72972 0 0 39 0 0 48622 0 0 0 0 0 0
+170 24967 1 1 24967 0 0 0 0 0 0 0 0 0
+171 74901 0 0 25142 0 0 24967 0 0 0 0 0 0
+172 24967 0 0 0 0 0 24967 0 0 0 0 0 0
+177 98736 1 1 24401 0 0 0 0 0 49368 6741 0 0
+184 129 0 0 129 0 0 0 0 0 0 0 0 0
+187 129 0 0 0 0 0 129 0 0 0 0 0 0
+188 258 1 1 129 0 0 129 0 0 0 0 0 0
+189 129 0 0 0 0 0 129 0 0 0 0 0 0
+191 258 0 0 129 0 0 129 0 0 0 0 0 0
+192 129 0 0 0 0 0 129 0 0 0 0 0 0
+194 258 0 0 0 0 0 0 0 0 129 2 0 0
+205 24272 0 0 0 0 0 24272 0 0 0 0 0 0
+206 48544 0 0 24272 0 0 24272 0 0 0 0 0 0
+207 24272 0 0 0 0 0 24272 0 0 0 0 0 0
+209 48544 0 0 24272 0 0 24272 0 0 0 0 0 0
+210 24272 0 0 0 0 0 24272 0 0 0 0 0 0
+212 118892 1 1 34557 1019 0 11519 1038 0 24272 2 0 0
+216 1192 1 1 596 0 0 0 0 0 596 18 0 0
+224 16 0 0 16 0 0 0 0 0 0 0 0 0
+226 16 0 0 0 0 0 16 0 0 0 0 0 0
+227 32 0 0 16 0 0 16 0 0 0 0 0 0
+228 16 0 0 0 0 0 16 0 0 0 0 0 0
+229 16 0 0 0 0 0 16 0 0 0 0 0 0
+230 32 0 0 16 0 0 16 0 0 0 0 0 0
+232 80 0 0 32 0 0 16 0 0 16 0 0 0
+233 32 0 0 0 0 0 0 0 0 16 0 0 0
+245 14 0 0 0 0 0 14 0 0 0 0 0 0
+246 28 0 0 14 0 0 14 0 0 0 0 0 0
+247 14 0 0 0 0 0 14 0 0 0 0 0 0
+248 14 0 0 0 0 0 14 0 0 0 0 0 0
+249 28 0 0 14 0 0 14 0 0 0 0 0 0
+251 70 0 0 28 0 0 14 0 0 14 0 0 0
+252 67 0 0 26 12 0 13 12 0 14 1 0 0
+255 1072 0 0 536 0 0 0 0 0 536 28 0 0
+263 25 0 0 25 0 0 0 0 0 0 0 0 0
+265 25 0 0 0 0 0 25 0 0 0 0 0 0
+266 50 0 0 25 0 0 25 0 0 0 0 0 0
+267 25 0 0 0 0 0 25 0 0 0 0 0 0
+268 25 0 0 0 0 0 25 0 0 0 0 0 0
+269 50 0 0 25 0 0 25 0 0 0 0 0 0
+271 125 0 0 50 0 0 25 0 0 25 1 0 0
+272 113 0 0 42 19 0 21 20 0 25 4 0 0
+284 511 1 1 511 0 0 0 0 0 0 0 0 0
+286 511 0 0 0 0 0 511 0 0 0 0 0 0
+287 1022 0 0 511 0 0 511 0 0 0 0 0 0
+288 511 0 0 0 0 0 511 0 0 0 0 0 0
+289 511 0 0 0 0 0 511 0 0 0 0 0 0
+290 1022 0 0 511 0 0 511 0 0 0 0 0 0
+292 2044 0 0 511 0 0 511 0 0 511 0 0 0
+293 3618 0 0 2290 248 1 481 239 0 511 210 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./realizers/magical_binary_queue.h++
+fn=main
+7 2 0 0 0 0 0 1 0 0 0 0 0 0
+18 2 0 0 0 0 0 1 0 0 0 0 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./realizers/magical_binary_queue.i++
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+28 300003 0 0 0 0 0 100001 0 0 0 0 0 0
+60 299999 0 0 99997 1 0 0 0 0 100001 1 0 0
+61 3299901 0 0 0 0 0 0 0 0 1599952 88371 0 0
+62 15999520 0 0 5799826 789 8 0 0 0 4399868 1262353 0 0
+63 8599742 0 0 0 0 0 0 0 0 2899913 100061 0 0
+64 199994 0 0 99997 0 0 99997 0 0 0 0 0 0
+68 200002 0 0 0 0 0 0 0 0 100001 2 0 0
+fn=KHJ::thesis::queue::magical_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator
+33 699999 1 1 99997 0 0 200002 1 1 0 0 0 0
+35 100001 0 0 0 0 0 100001 0 0 0 0 0 0
+38 300003 0 0 100001 6 0 0 0 0 100001 4 0 0
+42 199994 0 0 0 0 0 0 0 0 99997 26 0 0
+43 2905652 0 0 0 0 0 0 0 0 1452826 89082 0 0
+44 8933375 0 0 0 0 0 0 0 0 3875753 1106348 0 0
+45 12514623 0 0 4945851 3356 2 0 0 0 2522924 101574 0 0
+47 7268781 0 0 0 0 0 0 0 0 2422927 9 0 0
+48 199994 0 0 99997 0 0 99997 0 0 0 0 0 0
+50 300003 0 0 200002 2 2 0 0 0 100001 4 0 0
+52 400004 0 0 300003 5 1 0 0 0 0 0 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./registries/magical_root_registry.i++
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+80 700004 0 0 200001 13 0 100001 0 0 200001 13 0 0
+82 200013 0 0 100001 0 0 100012 0 0 0 0 0 0
+85 200002 0 0 200002 0 0 0 0 0 0 0 0 0
+87 200002 0 0 0 0 0 0 0 0 100001 25016 0 0
+89 199979 1 1 49991 0 0 0 0 0 74994 25009 0 0
+90 25008 0 0 0 0 0 25007 0 0 0 0 0 0
+92 200002 0 0 100001 0 0 0 0 0 100001 241 0 0
+93 99776 0 0 99776 10 0 0 0 0 0 0 0 0
+94 199552 0 0 0 0 0 99776 0 0 0 0 0 0
+168 100000 0 0 0 0 0 100000 0 0 0 0 0 0
+fn=KHJ::thesis::queue::magical_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator
+154 100001 0 0 0 0 0 100001 0 0 0 0 0 0
+155 2905676 1 1 0 0 0 0 0 0 1452838 100009 0 0
+156 10115278 0 0 5057639 3 0 0 0 0 3875767 1114384 0 0
+157 10091720 0 0 100000 1 0 0 0 0 4945860 737459 0 0
+158 7268790 0 0 7268790 19268 612 0 0 0 0 0 0 0
+159 1439626 0 0 0 0 0 719813 0 0 0 0 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+12 10 2 2 0 0 0 6 0 0 0 0 0 0
+15 1 0 0 0 0 0 1 0 0 0 0 0 0
+16 2 0 0 1 0 0 1 0 0 0 0 0 0
+17 3 1 1 1 0 0 1 0 0 0 0 0 0
+18 5 0 0 4 0 0 0 0 0 0 0 0 0
+28 4 1 1 0 0 0 3 0 0 0 0 0 0
+29 4 0 0 4 0 0 0 0 0 0 0 0 0
+106 600006 1 1 0 0 0 400004 0 0 0 0 0 0
+109 200002 1 1 200002 0 0 0 0 0 0 0 0 0
+110 100001 0 0 0 0 0 100001 1 1 0 0 0 0
+112 200002 0 0 0 0 0 0 0 0 100001 1 0 0
+115 1 0 0 1 0 0 0 0 0 0 0 0 0
+116 1 0 0 1 0 0 0 0 0 0 0 0 0
+117 25010 1 1 25007 0 0 1 0 0 0 0 0 0
+118 200000 0 0 0 0 0 0 0 0 100000 7 0 0
+121 337750 1 1 224949 0 0 0 0 0 112435 28 0 0
+122 74914 0 0 49947 0 0 0 0 0 24967 12477 0 0
+123 61979 0 0 12333 0 0 0 0 0 24823 181 0 0
+124 99775 0 0 99775 57 1 0 0 0 0 0 0 0
+125 399100 1 1 199550 0 0 99775 0 0 0 0 0 0
+133 199994 0 0 0 0 0 0 0 0 99997 25031 0 0
+135 424993 1 1 150008 327 0 0 0 0 125003 25126 0 0
+140 200002 0 0 0 0 0 100001 0 0 0 0 0 0
+142 999998 1 1 799996 13 5 0 0 0 0 0 0 0
+182 698432 1 1 0 0 0 498880 0 0 0 0 0 0
+185 199552 0 0 99776 81 0 99776 0 0 0 0 0 0
+187 199578 0 0 0 0 0 13 0 0 99776 13 0 0
+193 498880 1 1 199552 319 0 299328 0 0 0 0 0 0
+197 399104 0 0 399104 722 2 0 0 0 0 0 0 0
+199 199552 0 0 99776 0 0 0 0 0 99776 24984 0 0
+200 49790 0 0 49790 0 0 0 0 0 0 0 0 0
+201 99580 1 1 99580 0 0 0 0 0 0 0 0 0
+204 199160 0 0 0 0 0 0 0 0 99580 7 0 0
+207 49790 0 0 49790 0 0 0 0 0 0 0 0 0
+208 49790 0 0 49790 0 0 0 0 0 0 0 0 0
+209 99581 0 0 49790 0 0 0 0 0 49790 6 0 0
+211 199160 0 0 99580 0 0 49790 0 0 0 0 0 0
+213 199944 1 1 149958 0 0 49986 0 0 0 0 0 0
+219 598656 1 1 498880 0 0 0 0 0 0 0 0 0
+222 897975 0 0 0 0 0 698425 12 4 0 0 0 0
+224 99775 0 0 0 0 0 99775 0 0 0 0 0 0
+225 199550 0 0 99775 0 0 99775 0 0 0 0 0 0
+230 249538 2 2 24994 0 0 0 0 0 124769 28134 0 0
+233 149562 1 1 0 0 0 0 0 0 74781 35572 0 0
+235 124395 0 0 0 0 0 0 0 0 49793 31242 0 0
+239 199550 0 0 99775 0 0 0 0 0 99775 71329 0 0
+240 99580 0 0 0 0 0 0 0 0 49790 0 0 0
+245 298740 0 0 49790 0 0 0 0 0 149370 47832 0 0
+254 99775 0 0 99775 0 0 0 0 0 0 0 0 0
+255 99775 0 0 99775 0 0 0 0 0 0 0 0 0
+257 199550 1 1 0 0 0 99775 0 0 0 0 0 0
+258 798200 0 0 698425 0 0 0 0 0 0 0 0 0
+264 299992 1 1 49986 0 0 0 0 0 125003 25032 0 0
+266 287460 0 0 112473 0 0 0 0 0 99996 37507 0 0
+267 37509 0 0 0 0 0 0 0 0 12503 13 0 0
+277 299332 0 0 24995 0 0 49790 0 0 124771 26524 0 0
+278 24995 0 0 0 0 0 0 0 0 0 0 0 0
+279 149562 0 0 0 0 0 0 0 0 74781 28891 0 0
+281 174307 0 0 24954 0 0 0 0 0 49793 27654 0 0
+291 598656 0 0 199552 0 0 199552 0 0 0 0 0 0
+292 199552 1 1 0 0 0 199552 0 0 0 0 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./registries/stores/paper_root_table.h++
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::grow()
+16 13 0 0 0 0 0 13 0 0 0 0 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::paper_root_table()
+16 2 0 0 0 0 0 2 0 0 0 0 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/./registries/stores/paper_root_table.i++
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+41 3 1 1 0 0 0 0 0 0 0 0 0 0
+42 100001 0 0 100001 0 0 0 0 0 0 0 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+56 100000 0 0 100000 0 0 0 0 0 0 0 0 0
+58 199997 0 0 199997 0 0 0 0 0 0 0 0 0
+79 249381 1 1 0 0 0 99775 0 0 0 0 0 0
+80 798011 2 2 548473 74 0 149762 0 0 0 0 0 0
+93 498684 1 1 498684 114 0 0 0 0 0 0 0 0
+95 498684 0 0 199552 0 0 149566 0 0 0 0 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::grow()
+120 26 1 1 0 0 0 13 0 0 0 0 0 0
+125 13 0 0 13 0 0 0 0 0 0 0 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::paper_root_table()
+13 4 1 1 0 0 0 2 0 0 0 0 0 0
+18 3 0 0 2 0 0 0 0 0 0 0 0 0
+fl=/home/kasper/Development/workspace/datastructures/C++/priority_queues/meldable/base/magic_q.c++
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+18 2881049 0 0 200001 12 0 1340524 0 0 0 0 0 0
+fn=KHJ::thesis::queue::magical_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator
+18 3506441 0 0 2422930 0 0 1083511 0 0 0 0 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+18 560704 0 0 99776 0 0 261376 0 0 0 0 0 0
+19 598656 0 0 0 0 0 0 0 0 0 0 0 0
+fn=_GLOBAL__sub_I_main
+71 2 0 0 0 0 0 0 0 0 0 0 0 0
+fn=main
+44 3 1 1 0 0 0 2 0 0 0 0 0 0
+45 8 1 1 0 0 0 2 1 0 0 0 0 0
+48 3 0 0 0 0 0 1 0 0 0 0 0 0
+66 4 1 1 1 0 0 1 0 0 0 0 0 0
+70 2 0 0 0 0 0 1 0 0 0 0 0 0
+71 8 1 1 3 1 1 1 0 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/bits/basic_ios.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+276 6 1 1 0 0 0 4 0 0 0 0 0 0
+456 22 2 2 0 0 0 18 2 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/bits/basic_string.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+240 4 0 0 0 0 0 0 0 0 2 1 0 0
+245 4 0 0 0 0 0 0 0 0 2 0 0 0
+249 6 0 0 0 0 0 2 0 0 0 0 0 0
+293 2 0 0 2 0 0 0 0 0 0 0 0 0
+301 2 0 0 0 0 0 0 0 0 0 0 0 0
+fn=main
+240 2 0 0 0 0 0 0 0 0 1 1 0 0
+301 2 0 0 1 0 0 0 0 0 0 0 0 0
+fn=std::string::_Rep::_M_dispose(std::allocator<char> const&) [clone .part.1]
+245 3 0 0 1 0 0 0 0 0 1 0 0 0
+fl=/usr/include/c++/4.9.0/bits/list.tcc
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+69 1 0 0 1 0 0 0 0 0 0 0 0 0
+70 8 0 0 0 0 0 0 0 0 3 1 0 0
+73 2 0 0 2 0 0 0 0 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/bits/move.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+175 250000 0 0 250000 31252 0 0 0 0 0 0 0 0
+176 500000 0 0 250000 172298 0 250000 0 0 0 0 0 0
+177 250000 0 0 0 0 0 250000 0 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/bits/stl_algo.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+1152 2 0 0 0 0 0 0 0 0 1 0 0 0
+1155 100002 0 0 0 0 0 0 0 0 50001 11 0 0
+4431 4 0 0 0 0 0 0 0 0 2 0 0 0
+4432 400005 0 0 1 1 0 0 0 0 200002 10 0 0
+4433 1200000 0 0 0 0 0 200000 1 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/bits/stl_algobase.h
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>* const&>(KHJ::thesis::heap_node::heap_awh_node<lo
+222 116 1 1 0 0 0 0 0 0 43 15 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long
+222 38 1 1 0 0 0 0 0 0 18 1 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&)
+222 38 1 1 0 0 0 0 0 0 18 1 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&)
+222 38 1 1 0 0 0 0 0 0 18 1 0 0
+fn=void std::vector<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::root_table_node>, std::allocator<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_
+222 24 1 1 0 0 0 0 0 0 10 3 0 0
+fl=/usr/include/c++/4.9.0/bits/stl_construct.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+75 80 0 0 20 1 1 20 1 1 20 0 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>* const&>(KHJ::thesis::heap_node::heap_awh_node<lo
+75 210 0 0 42 9 0 42 0 0 42 0 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long
+75 655355 0 0 131071 16239 0 131071 16376 15869 131071 12 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&)
+75 655355 0 0 131071 16045 0 131071 16376 16335 131071 0 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&)
+75 655355 0 0 131071 16154 0 131071 16296 6884 131071 0 0 0
+fn=void std::vector<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::root_table_node>, std::allocator<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_
+75 120 0 0 30 0 0 30 0 0 30 0 0 0
+fl=/usr/include/c++/4.9.0/bits/stl_iterator.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+729 2999917 1 1 2999917 265 7 0 0 0 0 0 0 0
+751 50000 0 0 0 0 0 0 0 0 0 0 0 0
+757 3099915 0 0 0 0 0 0 0 0 0 0 0 0
+763 50001 0 0 0 0 0 0 0 0 0 0 0 0
+782 200002 1 1 0 0 0 0 0 0 0 0 0 0
+914 600000 1 1 0 0 0 0 0 0 0 0 0 0
+fn=KHJ::thesis::queue::magical_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator
+729 4058495 0 0 4058495 452 11 0 0 0 0 0 0 0
+757 5045854 0 0 0 0 0 0 0 0 0 0 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+729 349342 0 0 349342 17 0 0 0 0 0 0 0 0
+fn=void std::vector<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::root_table_node>, std::allocator<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_
+989 30 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/bits/stl_list.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+167 1499955 0 0 1499955 2 0 0 0 0 0 0 0 0
+790 1 0 0 0 0 0 0 0 0 0 0 0 0
+fn=KHJ::thesis::queue::magical_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator
+167 2705666 1 1 2705666 10 4 0 0 0 0 0 0 0
+790 199998 1 1 0 0 0 0 0 0 0 0 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+150 249145 0 0 249145 0 0 0 0 0 0 0 0 0
+159 199552 1 1 199552 0 0 0 0 0 0 0 0 0
+174 39 0 0 26 0 0 0 0 0 0 0 0 0
+192 99775 0 0 99775 0 0 0 0 0 0 0 0 0
+790 99776 1 1 0 0 0 0 0 0 0 0 0 0
+1697 26 0 0 0 0 0 13 0 0 0 0 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::grow()
+114 26 0 0 0 0 0 26 0 0 0 0 0 0
+1689 39 0 0 0 0 0 0 0 0 0 0 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::paper_root_table()
+114 4 0 0 0 0 0 4 0 0 0 0 0 0
+395 1 0 0 0 0 0 1 0 0 0 0 0 0
+396 1 0 0 0 0 0 1 0 0 0 0 0 0
+1689 6 1 1 0 0 0 1 0 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/bits/stl_uninitialized.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+74 81 1 1 0 0 0 1 0 0 20 4 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>* const&>(KHJ::thesis::heap_node::heap_awh_node<lo
+74 436 0 0 28 0 0 0 0 0 85 42 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long
+74 393385 0 0 17 6 0 0 0 0 131089 25 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&)
+74 393368 0 0 0 0 0 0 0 0 131089 26 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&)
+74 393368 0 0 0 0 0 0 0 0 131089 26 0 0
+fn=void std::vector<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::root_table_node>, std::allocator<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_
+74 166 0 0 0 0 0 0 0 0 40 13 0 0
+fl=/usr/include/c++/4.9.0/bits/stl_vector.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+87 18 2 2 0 0 0 18 1 0 0 0 0 0
+91 3 1 1 0 0 0 3 0 0 0 0 0 0
+161 7 1 1 7 2 2 0 0 0 0 0 0 0
+177 14 0 0 0 0 0 0 0 0 7 4 0 0
+915 600006 2 2 400004 13 0 0 0 0 200002 32 0 0
+919 499963 0 0 100001 0 0 199981 0 0 0 0 0 0
+923 99 0 0 18 0 0 21 0 0 0 0 0 0
+951 274573 0 0 50014 4 0 99776 0 0 0 0 0 0
+1287 1 0 0 0 0 0 1 0 0 0 0 0 0
+1288 4 0 0 0 0 0 1 0 0 0 0 0 0
+1439 2 0 0 1 1 1 1 1 1 0 0 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+87 9 1 1 0 0 0 9 1 0 0 0 0 0
+161 18 0 0 18 0 0 0 0 0 0 0 0 0
+177 38 1 1 0 0 0 0 0 0 19 1 0 0
+655 224544 0 0 24836 4 0 0 0 0 0 0 0 0
+915 2929843 6 6 1259221 255 0 299132 0 0 872806 552 0 0
+919 1970094 1 1 37498 0 0 872761 0 0 0 0 0 0
+923 12718 3 3 12541 0 0 83 0 0 0 0 0 0
+951 1883760 4 4 312080 3 0 710962 0 0 0 0 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::grow()
+185 13 0 0 0 0 0 13 0 0 0 0 0 0
+187 13 0 0 0 0 0 13 0 0 0 0 0 0
+321 13 0 0 0 0 0 13 0 0 0 0 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::paper_root_table()
+185 2 0 0 0 0 0 2 0 0 0 0 0 0
+187 2 0 0 0 0 0 2 0 0 0 0 0 0
+321 2 1 1 0 0 0 2 0 0 0 0 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>* const&>(KHJ::thesis::heap_node::heap_awh_node<lo
+170 56 1 1 0 0 0 0 0 0 28 5 0 0
+177 86 1 1 0 0 0 0 0 0 43 4 0 0
+655 172 0 0 0 0 0 0 0 0 0 0 0 0
+1427 28 0 0 0 0 0 0 0 0 0 0 0 0
+1428 168 0 0 0 0 0 0 0 0 56 6 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long
+170 34 0 0 0 0 0 0 0 0 17 6 0 0
+177 36 1 1 0 0 0 0 0 0 18 0 0 0
+655 72 0 0 0 0 0 0 0 0 0 0 0 0
+1427 17 0 0 0 0 0 0 0 0 0 0 0 0
+1428 102 0 0 0 0 0 0 0 0 34 11 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&)
+170 34 0 0 0 0 0 0 0 0 17 4 0 0
+177 36 0 0 0 0 0 0 0 0 18 1 0 0
+655 72 1 1 0 0 0 0 0 0 0 0 0 0
+1427 17 0 0 0 0 0 0 0 0 0 0 0 0
+1428 102 0 0 0 0 0 0 0 0 34 4 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&)
+170 34 0 0 0 0 0 0 0 0 17 7 0 0
+177 36 0 0 0 0 0 0 0 0 18 1 0 0
+655 72 1 1 0 0 0 0 0 0 0 0 0 0
+1427 17 0 0 0 0 0 0 0 0 0 0 0 0
+1428 102 1 1 0 0 0 0 0 0 34 7 0 0
+fn=void std::vector<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::root_table_node>, std::allocator<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_
+170 16 0 0 0 0 0 0 0 0 8 5 0 0
+177 20 0 0 0 0 0 0 0 0 10 1 0 0
+655 40 2 2 0 0 0 0 0 0 0 0 0 0
+1427 8 0 0 0 0 0 0 0 0 0 0 0 0
+1428 48 2 1 0 0 0 0 0 0 16 6 0 0
+fl=/usr/include/c++/4.9.0/bits/vector.tcc
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+94 675027 1 1 450018 1 0 0 0 0 225009 45 0 0
+98 474941 0 0 0 0 0 224969 0 0 0 0 0 0
+101 142 2 2 18 0 0 40 0 0 0 0 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+80 1 0 0 1 0 0 0 0 0 0 0 0 0
+81 1 0 0 0 0 0 1 0 0 0 0 0 0
+82 1 0 0 0 0 0 1 0 0 0 0 0 0
+83 3 1 1 1 0 0 1 0 0 0 0 0 0
+94 3 0 0 2 0 0 0 0 0 1 1 0 0
+101 3 0 0 0 0 0 1 0 0 0 0 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>* const&>(KHJ::thesis::heap_node::heap_awh_node<lo
+407 344 2 2 86 4 0 172 0 0 0 0 0 0
+441 43 0 0 0 0 0 43 0 0 0 0 0 0
+442 43 0 0 0 0 0 43 0 0 0 0 0 0
+443 86 0 0 0 0 0 43 0 0 0 0 0 0
+444 258 0 0 215 0 0 0 0 0 0 0 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long
+407 144 1 1 36 0 0 72 0 0 0 0 0 0
+441 18 0 0 0 0 0 18 0 0 0 0 0 0
+442 18 0 0 0 0 0 18 6 0 0 0 0 0
+443 36 0 0 0 0 0 18 0 0 0 0 0 0
+444 108 0 0 90 6 0 0 0 0 0 0 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&)
+407 144 1 1 36 0 0 72 5 0 0 0 0 0
+441 18 0 0 0 0 0 18 6 0 0 0 0 0
+442 18 0 0 0 0 0 18 0 0 0 0 0 0
+443 36 0 0 0 0 0 18 0 0 0 0 0 0
+444 108 0 0 90 6 0 0 0 0 0 0 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&)
+407 144 0 0 36 0 0 72 0 0 0 0 0 0
+441 18 0 0 0 0 0 18 6 0 0 0 0 0
+442 18 0 0 0 0 0 18 0 0 0 0 0 0
+443 36 0 0 0 0 0 18 0 0 0 0 0 0
+444 108 0 0 90 0 0 0 0 0 0 0 0 0
+fn=void std::vector<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::root_table_node>, std::allocator<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_
+407 80 1 1 20 0 0 40 0 0 0 0 0 0
+441 10 0 0 0 0 0 10 0 0 0 0 0 0
+442 10 0 0 0 0 0 10 0 0 0 0 0 0
+443 20 0 0 0 0 0 10 0 0 0 0 0 0
+444 60 0 0 50 0 0 0 0 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/ext/atomicity.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+67 2 0 0 2 0 0 0 0 0 0 0 0 0
+68 4 0 0 0 0 0 2 0 0 0 0 0 0
+81 6 2 2 0 0 0 0 0 0 2 2 0 0
+84 4 0 0 0 0 0 0 0 0 0 0 0 0
+fn=std::string::_Rep::_M_dispose(std::allocator<char> const&) [clone .part.1]
+67 1 0 0 1 0 0 0 0 0 0 0 0 0
+68 3 1 1 0 0 0 1 0 0 0 0 0 0
+81 3 1 1 0 0 0 0 0 0 1 1 0 0
+fl=/usr/include/c++/4.9.0/ext/new_allocator.h
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+104 300005 1 1 0 0 0 100002 0 0 0 0 0 0
+110 200006 0 0 0 0 0 100005 0 0 0 0 0 0
+120 1674797 0 0 399947 0 0 424950 37417 31330 424950 2 0 0
+fn=KHJ::thesis::root_registry::magical_root_registry<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_t
+104 2 0 0 0 0 0 1 0 0 0 0 0 0
+110 63 1 1 0 0 0 33 0 0 0 0 0 0
+120 4276175 4 4 1408551 0 0 872761 4975 9 872761 2722 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::grow()
+104 26 0 0 0 0 0 13 0 0 0 0 0 0
+fn=KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::paper_root_table()
+104 4 1 1 0 0 0 2 0 0 0 0 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>* const&>(KHJ::thesis::heap_node::heap_awh_node<lo
+104 430 1 1 129 0 0 86 0 0 0 0 0 0
+110 28 0 0 0 0 0 28 0 0 0 0 0 0
+120 258 0 0 129 0 0 43 0 0 43 0 0 0
+fn=void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long
+104 180 1 1 54 0 0 36 0 0 0 0 0 0
+110 17 0 0 0 0 0 17 6 0 0 0 0 0
+120 108 0 0 54 0 0 18 14 5 18 0 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&)
+104 180 1 1 54 0 0 36 0 0 0 0 0 0
+110 17 0 0 0 0 0 17 6 0 0 0 0 0
+120 72 0 0 18 0 0 18 14 14 18 0 0 0
+fn=void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&)
+104 180 1 1 54 0 0 36 0 0 0 0 0 0
+110 17 0 0 0 0 0 17 6 0 0 0 0 0
+120 72 0 0 18 0 0 18 11 8 18 0 0 0
+fn=void std::vector<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_awh_node<long long> >::root_table_node>, std::allocator<std::_List_iterator<KHJ::thesis::root_table::paper_root_table<KHJ::thesis::heap_node::heap_
+104 110 2 2 30 0 0 20 0 0 0 0 0 0
+110 8 0 0 0 0 0 8 0 0 0 0 0 0
+120 40 0 0 10 0 0 10 2 1 10 0 0 0
+fl=/usr/include/c++/4.9.0/fstream
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+220 8 0 0 0 0 0 6 0 0 0 0 0 0
+628 10 1 1 0 0 0 6 0 0 0 0 0 0
+629 6 0 0 0 0 0 2 0 0 0 0 0 0
+677 6 1 1 0 0 0 4 4 4 0 0 0 0
+fl=/usr/include/c++/4.9.0/iostream
+fn=_GLOBAL__sub_I_main
+74 6 0 0 0 0 0 1 0 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/ostream
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+93 6 0 0 4 2 2 2 0 0 0 0 0 0
+385 15 1 1 5 2 0 6 0 0 0 0 0 0
+fn=main
+113 2 0 0 0 0 0 1 0 0 0 0 0 0
+fl=/usr/include/c++/4.9.0/streambuf
+fn=KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, K
+198 6 2 2 0 0 0 4 0 0 0 0 0 0
+fl=???
+fn=(below main)
+0 58 6 6 16 5 0 17 0 0 7 1 2 2
+fn=???
+0 1500291 178 168 1499413 1278 48 395 16 12 143 45 1499078 261
+fn=_Exit
+0 8 1 1 1 0 0 0 0 0 0 0 0 0
+fn=_IO_cleanup
+0 102 8 8 32 0 0 17 0 0 21 5 1 1
+fn=_IO_default_setbuf
+0 30 3 3 7 0 0 11 0 0 2 1 1 1
+fn=_IO_default_xsputn
+0 203 4 4 63 0 0 16 0 0 36 5 11 1
+fn=_IO_do_write@@GLIBC_2.2.5
+0 16 2 2 3 0 0 2 0 0 2 1 0 0
+fn=_IO_doallocbuf
+0 13 2 2 6 1 0 2 0 0 3 2 1 1
+fn=_IO_file_doallocate
+0 54 5 5 11 2 0 6 0 0 6 1 1 1
+fn=_IO_file_overflow@@GLIBC_2.2.5
+0 419 6 6 121 0 0 75 1 0 94 7 0 0
+fn=_IO_file_setbuf@@GLIBC_2.2.5
+0 15 2 2 3 0 0 8 0 0 1 0 0 0
+fn=_IO_file_stat
+0 4 1 1 1 0 0 0 0 0 0 0 0 0
+fn=_IO_file_sync@@GLIBC_2.2.5
+0 104 2 2 48 0 0 16 0 0 16 3 0 0
+fn=_IO_file_write@@GLIBC_2.2.5
+0 36 2 2 8 0 0 5 0 0 5 3 0 0
+fn=_IO_file_xsputn@@GLIBC_2.2.5
+0 56 4 4 13 0 0 7 0 0 8 1 1 1
+fn=_IO_flush_all_lockp
+0 89 8 8 26 6 6 12 0 0 22 14 0 0
+fn=_IO_setb
+0 40 4 4 10 0 0 10 0 0 5 2 0 0
+fn=__GI_memcmp
+0 857 4 4 143 0 0 0 0 0 286 21 0 0
+fn=__acos_finite
+0 7 1 1 2 0 0 1 0 0 1 0 0 0
+fn=__asin_finite
+0 7 1 1 2 0 0 1 0 0 1 0 0 0
+fn=__atan2_finite
+0 10 2 2 2 0 0 1 0 0 2 1 0 0
+fn=__call_tls_dtors
+0 12 2 2 5 0 0 4 0 0 1 1 0 0
+fn=__cpu_indicator_init
+0 89 7 7 19 2 1 13 0 0 9 4 1 1
+fn=__ctype_init
+0 16 2 2 10 4 0 3 0 0 0 0 0 0
+fn=__cxa_atexit
+0 110 2 2 25 0 0 40 2 0 5 0 0 0
+fn=__cxa_finalize
+0 314 5 5 81 2 2 27 0 0 73 20 3 3
+fn=__cxa_guard_acquire
+0 33 4 4 13 1 0 7 0 0 5 3 0 0
+fn=__cxa_guard_release
+0 14 3 3 5 0 0 3 0 0 2 0 0 0
+fn=__cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+0 2100 3 3 660 0 0 540 0 0 120 8 0 0
+fn=__cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+0 1056 6 6 416 4 1 288 0 0 128 10 0 0
+fn=__default_morecore
+0 245 1 1 35 0 0 35 0 0 0 0 0 0
+fn=__dynamic_cast
+0 3724 4 4 1292 25 0 988 0 0 228 6 76 16
+fn=__exp_finite
+0 10 2 2 2 0 0 1 0 0 2 1 0 0
+fn=__gconv_btwoc_ascii
+0 640 1 1 128 0 0 0 0 0 0 0 0 0
+fn=__get_cpu_features
+0 70 1 1 28 0 0 0 0 0 14 7 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::overflow(int)
+0 6 2 2 1 0 0 0 0 0 1 0 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::sync()
+0 8 1 1 4 2 2 0 0 0 0 0 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::xsputn(char const*, long)
+0 5 1 1 1 1 0 0 0 0 0 0 0 0
+fn=__gnu_cxx::stdio_sync_filebuf<wchar_t, std::char_traits<wchar_t> >::sync()
+0 6 1 1 3 2 2 0 0 0 0 0 0 0
+fn=__init_cpu_features
+0 80 8 8 7 1 1 13 0 0 15 6 0 0
+fn=__init_misc
+0 24 2 2 7 2 0 5 1 0 3 0 0 0
+fn=__libc_csu_init
+0 41 3 3 9 2 0 9 0 0 3 2 2 2
+fn=__libc_memalign
+0 1003 4 4 197 3 0 194 2 2 115 30 0 0
+fn=__linkin_atfork
+0 9 2 2 4 2 1 1 0 0 2 1 0 0
+fn=__log_finite
+0 10 2 2 2 0 0 1 0 0 2 1 0 0
+fn=__memcmp_sse4_1
+0 111 11 11 38 1 1 0 0 0 24 7 1 1
+fn=__memcpy_sse2_unaligned
+0 36 5 5 6 2 0 4 0 0 7 3 0 0
+fn=__new_exitfn
+0 219 8 6 55 11 3 21 1 0 39 14 0 0
+fn=__overflow
+0 6 2 2 3 0 0 0 0 0 1 1 1 1
+fn=__pow_finite
+0 7 1 1 2 0 0 1 0 0 1 0 0 0
+fn=__run_exit_handlers
+0 114 5 5 17 5 5 15 0 0 24 4 3 3
+fn=__sigjmp_save
+0 9 1 1 2 0 0 2 1 0 1 0 0 0
+fn=__sigsetjmp
+0 246 4 4 64 0 0 104 2 1 0 0 0 0
+fn=__strcmp_ssse3
+0 384 3 3 112 1 0 0 0 0 48 4 0 0
+fn=__tls_get_addr
+0 11 2 2 7 2 2 0 0 0 2 1 0 0
+fn=__unregister_atfork
+0 52 2 2 20 2 2 4 0 0 12 3 0 0
+fn=__write_nocancel
+0 5 1 1 1 0 0 0 0 0 1 0 0 0
+fn=_dl_add_to_namespace_list
+0 250 3 3 68 0 0 47 0 0 26 13 12 2
+fn=_dl_add_to_slotinfo
+0 40 2 2 16 5 0 10 2 0 2 0 0 0
+fn=_dl_addr
+0 55979 9 9 13634 1036 832 16 2 0 12794 1993 2 2
+fn=_dl_allocate_tls_init
+0 123 7 7 38 2 0 18 1 0 17 3 0 0
+fn=_dl_allocate_tls_storage
+0 316 2 2 5 0 0 293 36 36 290 10 0 0
+fn=_dl_cache_libcmp
+0 3669 3 3 569 36 36 0 0 0 1028 80 0 0
+fn=_dl_catch_error
+0 480 3 3 132 0 0 240 5 5 12 0 24 3
+fn=_dl_check_all_versions
+0 117 2 2 19 0 0 11 0 0 15 6 0 0
+fn=_dl_check_map_versions
+0 4208 14 14 1340 24 19 514 40 39 509 99 0 0
+fn=_dl_debug_initialize
+0 65 3 3 22 0 0 4 0 0 21 17 0 0
+fn=_dl_debug_state
+0 2 0 0 2 0 0 0 0 0 0 0 0 0
+fn=_dl_determine_tlsoffset
+0 102 6 6 19 0 0 11 0 0 11 3 0 0
+fn=_dl_discover_osversion
+0 88 4 4 15 1 1 7 1 1 15 7 0 0
+fn=_dl_find_dso_for_object
+0 67 3 3 27 4 0 5 0 0 21 10 0 0
+fn=_dl_fini
+0 430 12 12 144 42 42 47 6 6 89 22 12 12
+fn=_dl_fixup
+0 9348 7 7 3516 419 139 1103 3 1 1100 39 3 3
+fn=_dl_higher_prime_number
+0 144 1 1 14 2 1 0 0 0 20 9 0 0
+fn=_dl_important_hwcaps
+0 254 18 18 45 0 0 43 2 2 33 14 0 0
+fn=_dl_init
+0 123 4 4 33 1 0 14 0 0 18 5 0 0
+fn=_dl_init_paths
+0 91 10 10 14 0 0 28 1 1 12 6 0 0
+fn=_dl_initial_error_catch_tsd
+0 26 0 0 13 0 0 0 0 0 0 0 0 0
+fn=_dl_load_cache_lookup
+0 1247 15 15 203 35 35 102 0 0 228 35 0 0
+fn=_dl_lookup_symbol_x
+0 539829 11 11 89214 1405 1158 32473 23 5 67626 1422 0 0
+fn=_dl_map_object
+0 2150 23 23 524 1 1 296 3 3 492 73 0 0
+fn=_dl_map_object_deps
+0 2716 37 37 561 5 1 228 4 4 644 87 0 0
+fn=_dl_map_object_from_fd
+0 4424 49 49 995 44 44 494 48 48 900 179 0 0
+fn=_dl_mcount_wrapper_check
+0 512 1 1 384 0 0 0 0 0 128 2 0 0
+fn=_dl_name_match_p
+0 9349 2 2 2419 47 7 1390 7 3 1387 52 0 0
+fn=_dl_new_object
+0 1172 15 15 224 7 7 214 43 43 168 64 0 0
+fn=_dl_next_ld_env_entry
+0 421 2 2 144 24 24 1 0 0 140 23 0 0
+fn=_dl_next_tls_modid
+0 16 2 2 6 0 0 2 0 0 2 0 0 0
+fn=_dl_protect_relro
+0 100 2 2 30 0 0 10 0 0 10 0 0 0
+fn=_dl_receive_error
+0 28 2 2 10 0 0 12 0 0 0 0 2 2
+fn=_dl_relocate_object
+0 210050 50 50 52601 3839 2941 18617 1106 742 38318 1875 2246 37
+fn=_dl_runtime_resolve
+0 2310 2 2 990 0 0 880 3 0 0 0 110 108
+fn=_dl_setup_hash
+0 161 2 2 49 9 9 42 0 0 14 0 0 0
+fn=_dl_sort_fini
+0 580 6 6 157 4 4 29 0 0 126 27 0 0
+fn=_dl_start
+0 820 22 21 164 27 25 58 18 17 147 32 9 1
+fn=_dl_sysdep_read_whole_file
+0 41 3 3 6 1 1 9 0 0 3 1 0 0
+fn=_dl_sysdep_start
+0 474 12 11 133 18 17 29 5 5 108 24 17 14
+fn=_dl_sysdep_start_cleanup
+0 1 1 1 1 0 0 0 0 0 0 0 0 0
+fn=_dl_unload_cache
+0 10 2 1 3 1 0 2 0 0 1 1 0 0
+fn=_dl_vdso_vsym
+0 24 2 2 12 3 0 0 0 0 4 4 0 0
+fn=_fxstat
+0 70 2 2 7 0 0 0 0 0 14 0 0 0
+fn=_init
+0 103 7 7 17 5 0 18 4 3 8 6 0 0
+fn=_int_free
+0 19203003 25 25 4494926 25076 5694 1997797 31 0 3858507 26617 0 0
+fn=_int_malloc
+0 22126292 68 66 4032992 463 7 3503103 74779 56292 2936413 50772 32 2
+fn=_setjmp
+0 2 1 1 0 0 0 0 0 0 0 0 0 0
+fn=access
+0 9 2 2 1 0 0 1 0 0 1 1 0 0
+fn=allocate_dtv
+0 19 2 2 4 0 0 5 1 1 1 0 0 0
+fn=bcmp
+0 1910 13 13 455 11 10 142 3 3 336 77 0 0
+fn=bool std::has_facet<std::codecvt<char, char, __mbstate_t> >(std::locale const&)
+0 42 1 1 18 1 0 6 0 0 4 1 0 0
+fn=bool std::has_facet<std::ctype<char> >(std::locale const&)
+0 168 3 2 72 3 0 24 0 0 16 1 0 0
+fn=bool std::has_facet<std::ctype<wchar_t> >(std::locale const&)
+0 84 2 2 36 1 0 12 0 0 8 0 0 0
+fn=bool std::has_facet<std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+0 168 1 1 72 1 0 24 0 0 16 1 0 0
+fn=bool std::has_facet<std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+0 84 2 2 36 0 0 12 0 0 8 0 0 0
+fn=bool std::has_facet<std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+0 168 2 2 72 2 0 24 0 0 16 0 0 0
+fn=bool std::has_facet<std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+0 84 2 2 36 1 0 12 0 0 8 1 0 0
+fn=brk
+0 441 3 3 67 0 0 34 1 1 68 4 0 0
+fn=btowc
+0 7680 4 4 2176 4 0 1024 0 0 1408 15 128 1
+fn=call_init.part.0
+0 375 4 4 123 25 0 60 0 0 43 13 18 18
+fn=calloc
+0 136 2 2 0 0 0 0 0 0 17 14 0 0
+fn=ceil
+0 6 1 1 2 0 0 1 0 0 1 1 0 0
+fn=ceilf
+0 6 1 1 2 0 0 1 0 0 1 1 0 0
+fn=char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag)
+0 66 3 3 10 2 0 16 0 0 8 4 0 0
+fn=check_match.9476
+0 69781 7 7 28221 322 175 8074 25 4 12073 171 0 0
+fn=close
+0 30 0 0 6 0 0 0 0 0 6 0 0 0
+fn=cos
+0 10 2 2 2 0 0 1 0 0 2 1 0 0
+fn=dl_main
+0 1190 73 73 264 42 20 141 18 17 247 93 1 1
+fn=do_lookup_x
+0 356150 32 32 120887 2695 711 50692 23 7 57584 4105 102 3
+fn=do_preload
+0 28 3 3 7 0 0 8 0 0 1 1 0 0
+fn=exit
+0 4 1 1 0 0 0 1 0 0 0 0 0 0
+fn=expand_dynamic_string_token
+0 20 2 2 5 0 0 6 0 0 1 0 0 0
+fn=fflush
+0 294 4 4 126 8 8 28 0 0 63 8 7 1
+fn=floor
+0 6 1 1 2 0 0 1 0 0 1 1 0 0
+fn=floorf
+0 6 1 1 2 0 0 1 0 0 1 1 0 0
+fn=free
+0 3745465 3 3 749099 25020 5612 16 0 0 998790 33 0 0
+fn=fwrite
+0 64 6 6 23 4 1 9 0 0 11 5 1 1
+fn=gettimeofday
+0 60 3 3 5 0 0 5 0 0 5 3 0 0
+fn=handle_intel
+0 98 5 5 14 0 0 26 0 0 8 2 0 0
+fn=index
+0 463 6 6 60 4 4 0 0 0 37 4 0 0
+fn=init_cacheinfo
+0 145 8 8 9 1 0 13 2 2 24 8 0 0
+fn=init_tls
+0 92 5 5 21 6 2 14 1 1 20 10 0 0
+fn=intel_check_word
+0 860 10 10 70 6 6 12 0 0 236 62 0 0
+fn=local_strdup
+0 85 2 2 10 0 0 20 0 0 5 0 0 0
+fn=malloc
+0 10237493 4 4 2996321 215 9 749081 1 0 2496915 125 1 1
+fn=malloc_consolidate
+0 7208 9 9 3208 38 0 704 0 0 1585 120 0 0
+fn=malloc_hook_ini
+0 11 2 2 3 1 1 3 0 0 1 1 0 0
+fn=malloc_init_state
+0 648 2 2 2 0 0 257 32 31 128 9 0 0
+fn=map_doit
+0 12 1 1 5 0 0 3 0 0 0 0 0 0
+fn=match_symbol
+0 2178 4 4 836 39 37 198 0 0 594 33 0 0
+fn=memcpy
+0 1105 5 5 208 14 6 178 24 24 250 103 0 0
+fn=memcpy@@GLIBC_2.14
+0 7 1 1 3 2 0 0 0 0 2 1 0 0
+fn=memcpy@GLIBC_2.2.5
+0 13 1 1 4 0 0 0 0 0 2 1 0 0
+fn=mempcpy
+0 251 5 5 37 2 1 28 5 5 65 31 0 0
+fn=memset
+0 4998 1 1 19 0 0 4884 78 78 4903 65 0 0
+fn=mmap
+0 156 3 3 26 0 0 0 0 0 26 0 0 0
+fn=mprotect
+0 50 1 1 10 0 0 0 0 0 10 0 0 0
+fn=munmap
+0 45 1 1 9 0 0 0 0 0 9 0 0 0
+fn=munmap_chunk
+0 168 2 2 64 12 2 0 0 0 32 0 0 0
+fn=new_do_write
+0 40 4 4 13 0 0 10 0 0 6 4 1 1
+fn=newlocale
+0 40 4 4 12 0 0 9 0 0 7 3 0 0
+fn=open
+0 30 1 1 6 0 0 0 0 0 6 0 0 0
+fn=open_verify
+0 969 12 12 224 6 6 88 1 1 172 35 0 0
+fn=openaux
+0 187 1 1 88 0 0 33 0 0 0 0 0 0
+fn=operator delete(void*)
+0 249693 1 1 0 0 0 0 0 0 0 0 0 0
+fn=operator delete[](void*)
+0 149566 0 0 0 0 0 0 0 0 0 0 0 0
+fn=operator new(unsigned long)
+0 2746623 1 1 499386 0 0 499386 8 0 249693 5 0 0
+fn=operator new[](unsigned long)
+0 598264 1 1 149566 0 0 149566 2 2 0 0 0 0
+fn=ptmalloc_init.part.7
+0 463 9 9 152 41 1 15 4 2 143 22 0 0
+fn=putc
+0 40 3 3 18 0 0 4 0 0 9 2 0 0
+fn=rand
+0 800000 1 1 200000 0 0 200000 0 0 0 0 0 0
+fn=random
+0 3400000 2 2 1200000 3 2 200000 0 0 800000 14 0 0
+fn=random_r
+0 5193549 2 2 1600000 6 5 800000 0 0 800000 6451 0 0
+fn=read
+0 25 0 0 5 0 0 0 0 0 5 0 0 0
+fn=rindex
+0 24 2 2 2 1 0 0 0 0 3 0 0 0
+fn=rint
+0 6 1 1 2 0 0 1 0 0 1 1 0 0
+fn=rintf
+0 6 2 2 2 0 0 1 0 0 1 1 0 0
+fn=rtld_lock_default_lock_recursive
+0 116 2 2 116 5 1 0 0 0 0 0 0 0
+fn=rtld_lock_default_unlock_recursive
+0 116 0 0 116 1 0 0 0 0 0 0 0 0
+fn=sbrk
+0 878 5 5 216 63 0 105 1 0 204 9 0 0
+fn=sin
+0 10 1 1 2 0 0 1 0 0 2 1 0 0
+fn=std::__basic_file<char>::__basic_file(pthread_mutex_t*)
+0 6 1 1 2 0 0 4 0 0 0 0 0 0
+fn=std::__basic_file<char>::close()
+0 24 1 1 6 0 0 6 0 0 2 1 0 0
+fn=std::__basic_file<char>::is_open() const
+0 12 0 0 8 2 2 0 0 0 0 0 0 0
+fn=std::__basic_file<char>::~__basic_file()
+0 2 1 1 0 0 0 0 0 0 0 0 0 0
+fn=std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+0 105 1 1 45 0 0 60 0 0 0 0 0 0
+fn=std::__detail::_List_node_base::_M_unhook()
+0 65 0 0 39 0 0 26 0 0 0 0 0 0
+fn=std::__timepunct<char>::_M_initialize_timepunct(__locale_struct*)
+0 107 12 12 6 0 0 52 0 0 2 1 0 0
+fn=std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned long)
+0 22 2 2 4 0 0 9 0 0 0 0 0 0
+fn=std::__timepunct<wchar_t>::_M_initialize_timepunct(__locale_struct*)
+0 105 13 13 5 0 0 51 0 0 2 0 0 0
+fn=std::__timepunct<wchar_t>::__timepunct(std::__timepunct_cache<wchar_t>*, unsigned long)
+0 22 2 2 4 0 0 9 1 1 0 0 0 0
+fn=std::basic_filebuf<char, std::char_traits<char> >::basic_filebuf()
+0 128 7 7 14 1 0 86 6 0 2 2 0 0
+fn=std::basic_filebuf<char, std::char_traits<char> >::close()
+0 46 3 3 14 0 0 10 0 0 4 1 0 0
+fn=std::basic_ios<char, std::char_traits<char> >::_M_cache_locale(std::locale const&)
+0 240 3 3 24 0 0 88 0 0 24 0 0 0
+fn=std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)
+0 176 2 2 24 0 0 80 0 0 0 0 0 0
+fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::_M_cache_locale(std::locale const&)
+0 120 2 2 12 0 0 44 0 0 12 2 0 0
+fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*)
+0 88 3 3 12 0 0 40 0 0 0 0 0 0
+fn=std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+0 56 6 6 24 2 0 12 0 0 5 3 1 1
+fn=std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)
+0 25 2 2 9 2 0 4 0 0 3 1 0 0
+fn=std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
+0 18 1 1 3 0 0 4 0 0 1 0 0 0
+fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
+0 42 1 1 21 10 10 6 0 0 6 0 3 1
+fn=std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)
+0 48 2 2 12 0 0 14 1 0 2 1 0 0
+fn=std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)
+0 24 3 3 10 1 0 3 0 0 4 3 0 0
+fn=std::codecvt<char, char, __mbstate_t> const& std::use_facet<std::codecvt<char, char, __mbstate_t> >(std::locale const&)
+0 38 2 2 18 0 0 6 0 0 6 0 0 0
+fn=std::codecvt<char, char, __mbstate_t>::codecvt(unsigned long)
+0 17 2 2 4 0 0 6 1 1 0 0 0 0
+fn=std::codecvt<wchar_t, char, __mbstate_t>::codecvt(unsigned long)
+0 17 1 1 4 0 0 6 2 2 0 0 0 0
+fn=std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&)
+0 152 2 2 72 0 0 24 0 0 24 5 0 0
+fn=std::ctype<char>::_M_widen_init() const
+0 1099 3 3 43 1 0 295 4 0 291 18 0 0
+fn=std::ctype<char>::ctype(unsigned short const*, bool, unsigned long)
+0 116 4 4 8 1 0 79 9 9 65 20 0 0
+fn=std::ctype<wchar_t> const& std::use_facet<std::ctype<wchar_t> >(std::locale const&)
+0 76 2 2 36 0 0 12 0 0 12 0 0 0
+fn=std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const
+0 129 6 6 12 0 0 0 0 0 58 15 0 0
+fn=std::ctype<wchar_t>::_M_initialize_ctype()
+0 2757 4 4 5 0 0 810 20 20 536 16 0 0
+fn=std::ctype<wchar_t>::ctype(unsigned long)
+0 19 2 2 3 0 0 7 1 1 0 0 0 0
+fn=std::error_category::~error_category()
+0 3 0 0 3 0 0 0 0 0 0 0 0 0
+fn=std::future_category()
+0 16 2 2 2 0 0 3 0 0 2 1 0 0
+fn=std::ios_base::Init::Init()
+0 273 31 31 48 12 1 165 21 18 3 3 0 0
+fn=std::ios_base::Init::~Init()
+0 23 2 2 9 7 7 7 0 0 2 1 0 0
+fn=std::ios_base::_M_call_callbacks(std::ios_base::event)
+0 24 2 2 10 0 0 6 0 0 2 1 0 0
+fn=std::ios_base::_M_dispose_callbacks()
+0 24 1 1 10 0 0 8 0 0 2 2 0 0
+fn=std::ios_base::_M_init()
+0 288 3 3 72 0 0 108 0 0 12 0 0 0
+fn=std::ios_base::ios_base()
+0 590 3 3 10 1 0 270 40 28 80 33 0 0
+fn=std::ios_base::~ios_base()
+0 32 2 2 6 3 3 8 0 0 2 2 0 0
+fn=std::locale::_Impl::_Impl(unsigned long)
+0 807 65 65 132 22 1 402 47 47 39 20 0 0
+fn=std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*)
+0 7364 5 5 2716 0 0 224 0 0 1708 66 0 0
+fn=std::locale::facet::_S_create_c_locale(__locale_struct*&, char const*, __locale_struct*)
+0 9 1 1 2 0 0 3 0 0 1 0 0 0
+fn=std::locale::facet::_S_get_c_locale()
+0 92 2 2 41 0 0 11 0 0 20 8 0 0
+fn=std::locale::facet::_S_get_c_name()
+0 10 1 1 5 0 0 0 0 0 0 0 0 0
+fn=std::locale::id::_M_id() const
+0 812 1 1 280 8 2 56 0 0 140 24 0 0
+fn=std::locale::locale()
+0 600 3 3 240 1 0 180 1 0 60 18 0 0
+fn=std::locale::operator=(std::locale const&)
+0 228 2 2 96 0 0 36 0 0 24 12 0 0
+fn=std::locale::~locale()
+0 192 1 1 80 4 4 32 0 0 32 15 0 0
+fn=std::messages<char>::messages(unsigned long)
+0 19 2 2 4 0 0 8 0 0 0 0 0 0
+fn=std::messages<wchar_t>::messages(unsigned long)
+0 19 1 1 4 0 0 8 0 0 0 0 0 0
+fn=std::moneypunct<char, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 112 5 5 37 1 1 31 0 0 13 7 0 0
+fn=std::moneypunct<char, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 112 5 5 37 0 0 31 0 0 13 11 0 0
+fn=std::moneypunct<wchar_t, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 108 6 6 29 0 0 32 0 0 14 10 0 0
+fn=std::moneypunct<wchar_t, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 108 7 7 29 0 0 32 0 0 14 10 0 0
+fn=std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > const& std::use_facet<std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+0 152 1 1 72 0 0 24 0 0 24 0 0 0
+fn=std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > const& std::use_facet<std::num_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+0 76 1 1 36 0 0 12 0 0 12 0 0 0
+fn=std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > const& std::use_facet<std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > > >(std::locale const&)
+0 152 2 2 72 0 0 24 0 0 24 6 0 0
+fn=std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > const& std::use_facet<std::num_put<wchar_t, std::ostreambuf_iterator<wchar_t, std::char_traits<wchar_t> > > >(std::locale const&)
+0 76 2 2 36 0 0 12 0 0 12 0 0 0
+fn=std::numpunct<char>::_M_initialize_numpunct(__locale_struct*)
+0 413 5 5 136 4 1 75 0 0 64 18 0 0
+fn=std::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*)
+0 349 5 5 73 0 0 75 3 3 64 19 0 0
+fn=std::ostream::flush()
+0 56 1 1 28 10 10 8 0 0 8 0 4 1
+fn=std::ostream::put(char)
+0 41 4 4 19 0 0 6 0 0 5 3 1 1
+fn=std::ostream::sentry::sentry(std::ostream&)
+0 50 2 2 18 3 0 10 0 0 4 2 0 0
+fn=std::string::_Rep::_M_destroy(std::allocator<char> const&)
+0 2 1 1 0 0 0 0 0 0 0 0 0 0
+fn=std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&)
+0 40 2 2 4 0 0 8 0 0 6 2 0 0
+fn=strcasecmp
+0 7 3 3 3 1 1 1 0 0 2 1 0 0
+fn=strcmp
+0 138348 2 2 40864 231 90 0 0 0 37987 2021 0 0
+fn=strlen
+0 2246 7 7 242 5 5 0 0 0 451 70 0 0
+fn=strncasecmp
+0 6 2 2 3 0 0 0 0 0 2 2 0 0
+fn=strsep
+0 915 3 3 148 0 0 1 0 0 240 15 0 0
+fn=systrim.isra.1
+0 61 4 4 23 5 0 11 2 0 5 1 3 3
+fn=time
+0 60 3 3 5 1 1 5 0 0 5 3 0 0
+fn=uname
+0 5 1 1 1 0 0 0 0 0 1 0 0 0
+fn=uselocale
+0 44 3 3 20 3 0 8 0 0 2 0 0 0
+fn=version_check_doit
+0 10 1 1 4 0 0 2 0 0 1 1 0 0
+fn=wctob
+0 768 1 1 128 0 0 0 0 0 256 4 0 0
+fn=wctype_l
+0 876 2 2 139 4 0 153 0 0 130 13 0 0
+fn=write
+0 2 1 1 1 0 0 0 0 0 1 0 0 0
+summary: 349151908 1636 1617 108565926 3051495 158598 48644324 1978943 176448 68121613 6906824 1501923 516

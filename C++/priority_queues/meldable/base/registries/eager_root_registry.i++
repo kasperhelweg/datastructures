@@ -1,0 +1,235 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace root_registry  {
+      /**
+       * Constructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      eager_root_registry<N, M, S>::eager_root_registry( ) : size_( 0 ), top_( nullptr )
+      { }
+
+      /**
+       * DeConstructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      eager_root_registry<N, M, S>::~eager_root_registry( ) 
+      { }
+      
+      /**
+       * top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      N* eager_root_registry<N, M, S>::top( ) const
+      { 
+        return top_; 
+      }
+      
+      /**
+       * size( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      int eager_root_registry<N, M, S>::size( ) const
+      { 
+        return size_; 
+      }
+
+      template<typename N, typename M, typename S>
+      bool eager_root_registry<N, M, S>::empty( ) const
+      { 
+        return size_ == 0; 
+      }
+     
+      /**
+       * inject( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void eager_root_registry<N, M, S>::inject( N* Q )
+      { 
+        if( top_ == nullptr || 
+            M::compare_( (*Q).element(), (*top_).element() ) ) { 
+          top_ = Q; 
+        }         
+        root_table_.inject( Q );
+        size_++;
+      }
+
+      /**
+       * eject( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      N* eager_root_registry<N, M, S>::eject( )
+      { 
+        N* B = nullptr;               
+        for( auto it = root_table_.begin( ) ; it != root_table_.end( ) ; it++ ) {
+          if( !(*it).empty( )) {
+            B = root_table_.remove_root( it );
+            if( (*B).height( ) != 0 ) {
+              N** st = M::split( B );
+              root_table_.insert_root( --it, st[0] ); 
+              root_table_.insert_root( it, st[1] );
+              if( (*it).size( ) >= 3 ) { fix_( it ); } 
+              delete[] st;
+            } break;
+          }
+        }
+        if( (*B).element( ) == (*top_).element( ) ) {
+          M::siftup( top_ ); top_ = B;
+        }
+        size_--;
+        return B;
+      }
+       
+      /**
+       * consolidate( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void eager_root_registry<N, M, S>::consolidate( )
+      { 
+        if( (*root_table_.begin( )).size( ) == 3 )
+          hi_.push_back( root_table_.begin( ) ); 
+        while( !hi_.empty( ) ) {
+          I j = hi_.back( ); hi_.pop_back( );
+          fix_( j );
+        }
+      }
+
+      template<typename N, typename M, typename S>
+      void eager_root_registry<N, M, S>::meld( eager_root_registry& other )
+      {
+        int s = other.size( );
+
+        if( other.size( ) <= size( ) ) {
+          I i = other.begin( );
+          I j = other.end( );
+          I k = begin( );
+          while( i != j ) {
+            while( (*i).size( ) != 0 ) {
+              N* Q =  other.root_table_.remove_root( i );
+              root_table_.insert_root( k, Q );
+              if( (*k).size( ) == 3 && k != begin( ) ) { hi_.push_back( k ); }
+              consolidate( );
+            }
+            i++;
+            k++;
+          }
+        }
+               
+        if( M::compare_( (*(other.top_)).element(),  (*top_).element() ) )
+          top_ = other.top_;
+        size_ += s; other.size_ = 0; other.top_ = nullptr;
+      }
+
+      /**
+       * update_top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void eager_root_registry<N, M, S>::update_top( )
+      {
+        top_ = nullptr;
+        for( auto it = root_table_.begin( ) ; it != root_table_.end( ) ; it++ ) {
+          for( auto vit = (*it).begin( ) ; vit != (*it).end( ) ; vit++ ) {
+            if( top_ == nullptr || 
+                M::compare_( (*(*vit)).element(), (*top_).element() ) )  {          
+              top_ = *vit; } } 
+        }
+      }
+
+      /**
+       * update_top( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N, typename M, typename S>
+      void eager_root_registry<N, M, S>::update_top( N* Q )
+      {
+        top_ = Q;
+      }
+       
+      template<typename N, typename M, typename S>
+      void eager_root_registry<N, M, S>::print( ) const
+      {
+        std::cout << "size: " << size( ) << std::endl;
+        root_table_.print( );
+        if( top_ != nullptr ) {
+          std::cout << "top: " << (*top_).element( ) << std::endl;
+        }
+        std::cout << std::endl;
+      }
+
+      template <typename N, typename M, typename S>
+      void eager_root_registry<N, M, S>::fix_( I j )
+      { 
+        I e = std::next( j );  
+        I w = std::prev( j );
+        
+        if( e == root_table_.end( ) ) { root_table_.grow( ); --e; }
+        
+        N* Q = root_table_.remove_root( j );
+        N* R = root_table_.remove_root( j );
+        N* V = root_table_.remove_root( j );
+        
+        N* t[3] = { Q, R, V };     
+        swap_nodes_( t, 0, M::compare_( 
+          (*t[1]).element(), (*t[0]).element() ) );
+        swap_nodes_( t, 2, M::compare_( 
+          (*t[0]).element(), (*t[2]).element() ) );       
+        if( j != root_table_.begin( ) ) {
+          N** st = M::split( t[0] );
+          M::join_heaps( t[0], t[1], t[2]  ); 
+          root_table_.insert_root( e, t[0]  );
+          root_table_.insert_root( w, st[0] ); 
+          root_table_.insert_root( w, st[1] );
+          if( (*e).size( ) >= 3 ) { hi_.push_back( e ); }
+          if( (*w).size( ) >= 3 ) { hi_.push_back( w ); }
+          delete[] st;
+        } else {
+          M::join_heaps( t[0], t[1], t[2]  ); root_table_.insert_root( e, t[0] );
+          if( (*e).size( ) >= 3 ) { hi_.push_back( e ); }
+        }
+      }
+
+      // swap aux
+      template <typename N, typename M, typename S>
+      void eager_root_registry<N, M, S>::swap_nodes_ (N* nodes[], int i1, int i2) 
+      {
+        N* temp   = nodes[i1];
+        nodes[i1] = nodes[i2];
+        nodes[i2] = temp;
+      }
+    }
+  }
+}

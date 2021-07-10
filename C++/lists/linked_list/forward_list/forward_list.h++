@@ -19,11 +19,11 @@ namespace KHJ {
         //
         struct node_ 
         {
-          explicit node_( const T &val ) : val_( val ), next_( nullptr ) 
-          { };
+          explicit node_( const T& val ) : val_( val ), next_( nullptr ) 
+          { }; 
           
-          T       val_;
-          node_ *next_;
+          T   val_;
+          node_* next_;
         };
         
         template <typename RefT, typename PtrT>
@@ -32,38 +32,38 @@ namespace KHJ {
           iterator_( ) : ptr( nullptr ) 
           { };
           
-          explicit iterator_( node_ *p ) : ptr( p ) 
+          explicit iterator_( node_* p ) : ptr( p ) 
           { };
 
           typedef PtrT pointer;
           typedef RefT reference;
           
-          T&           operator*( ) const;
+                  T&  operator* ( ) const;
           iterator_&  operator++( );
           iterator_   operator++( int );
-          bool        operator==( const iterator_ & ) const;
-          bool        operator!=( const iterator_ & ) const;
+              bool    operator==( const iterator_& ) const;
+              bool    operator!=( const iterator_& ) const;
           
-          operator iterator_<const T &, const T *>() const { return iterator_<const T &, const T *>(); }
+          operator iterator_<const T&, const T*>() const { return iterator_<const T&, const T*>(); }
 
         private:
-          node_ *ptr;
+          node_* ptr;
         };
-   
+        
       public:
         // Structors    
         //
          forward_list( );
         ~forward_list( );
         
-        forward_list( const forward_list & );
-        forward_list& operator=( const forward_list<T,A> & );
+        forward_list           ( const forward_list& );
+        forward_list& operator=( const forward_list<T,A>& );
 
         // Typedefs
         //
-        typedef T              value_type;
-        typedef A          allocator_type;
-        typedef T&              reference;
+        typedef T   value_type;
+        typedef A   allocator_type;
+        typedef T&  reference;
         typedef const T&  const_reference;
         
         // Allocator
@@ -72,33 +72,33 @@ namespace KHJ {
       
         // Iterators
         //
-        typedef iterator_<T&, T*>                   iterator;
+        typedef iterator_<T&, T*>             iterator;
         typedef iterator_<const T&, const T*> const_iterator;
         
-        iterator        begin( );
-        iterator          end( );
-        const_iterator  begin( ) const;
-        const_iterator    end( ) const;
+              iterator begin( );
+              iterator end  ( );
+        const_iterator begin( ) const;
+        const_iterator end  ( ) const;
         
         // Function Members
         //
-        bool           empty( ) const;
-        reference      front( ) const;
-        void      push_front( const_reference );
-        void       pop_front( );
-        void          remove( T );
+             bool empty     ( ) const;
+        reference front     ( ) const;
+             void push_front( const_reference );
+             void pop_front ( );
+             void remove    ( T );
                 
       private:
         // Variable Members
         //
         node_allocator alloc_;
-        node_             *h_;
+        node_* h_;
 
         // Function Members
         //
-        node_ *buy_node_( const T & ); 
-        void  sell_node_( node_ * ); 
-        void       clear( );
+        node_* buy_node_ ( const T& ); 
+        void   sell_node_( node_* ); 
+        void   clear     ( );
       };
   }
 }

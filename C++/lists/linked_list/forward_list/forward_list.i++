@@ -48,12 +48,12 @@ namespace KHJ  {
     template <typename T, typename A>
     forward_list<T, A>::forward_list( const forward_list<T, A> & me ) : alloc_( A( ) ) 
     {
-      h_ = buy_node_( );
+      h_             = buy_node_( );
       node_ *tmp_ptr = h_;
       
       for( const_iterator iter = me.begin( ); iter != me.end( ); ++iter ) {
         tmp_ptr->next_ = buy_node_( *iter );
-        tmp_ptr = tmp_ptr->next_;
+        tmp_ptr        = tmp_ptr->next_;
       }
     }
     
@@ -133,7 +133,7 @@ namespace KHJ  {
     forward_list<T, A>::pop_front( ) 
     {
       if( h_->next_ == nullptr ) return;
-      node_ *f = h_->next_;
+      node_ *f  = h_->next_;
 
       h_->next_ = f->next_;   
       f->next_  = nullptr;
@@ -224,10 +224,10 @@ namespace KHJ  {
     {
       if( !empty( ) ) {
         node_ *tmp_ptr_ = h_->next_;
-        node_  *tmp_ptr = nullptr;
+        node_ *tmp_ptr  = nullptr;
         
         do {
-          tmp_ptr = tmp_ptr_->next_; sell_node_( tmp_ptr_ );
+          tmp_ptr  = tmp_ptr_->next_; sell_node_( tmp_ptr_ );
           tmp_ptr_ = tmp_ptr;
         } while( tmp_ptr_ != nullptr );
       }

@@ -1,0 +1,151 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace root_table {
+      
+      /**
+       * Constructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      regular_root_table<N>::regular_root_table( ) : top( nullptr ), size_( 0 )
+      {
+        root_table_node n1( 0 ); 
+        root_table_node n2( 1 );  
+        root_table_.push_back( n1 ); 
+        root_table_.push_back( n2 ); 
+      }
+
+      /**
+       * DeConstructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      regular_root_table<N>::~regular_root_table( ) 
+      { }
+
+      /**
+       * push_front( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      void regular_root_table<N>::inject( N* S ) 
+      {
+        (*begin()).root_list_.push_front( root_list_node( S, S )  );
+        (*begin( )).size_++;
+      }
+
+      /**
+       * pop_front( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      N* regular_root_table<N>::eject( ) 
+      { 
+        
+      }
+
+      template <typename N>
+      int regular_root_table<N>::size( ) const
+      { 
+        return root_table_.size( );
+      }
+
+      /**
+       * insert( I position )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      void regular_root_table<N>::insert_root( iterator_type position, N* S, N* sp, 
+                                               unsigned short b, unsigned long bittrace )
+      { 
+        if( position == end( ) ) {
+          grow( b  );
+          --position;
+        }
+
+        (*position).root_list_.push_front( root_list_node( S, sp, b, bittrace )  );
+        (*position).size_++;
+      }
+
+      /**
+       * extract( I position )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      typename regular_root_table<N>::root_list_node 
+      regular_root_table<N>::remove_root( iterator_type position )
+      {
+        root_list_node S = (*position).root_list_.front( );
+        (*position).root_list_.pop_front( );
+        (*position).size_--;
+        
+        return S;
+      }
+
+      /**
+       * extract( N* R )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      typename regular_root_table<N>::root_list_node 
+      regular_root_table<N>::remove_root( iterator_type position, root_list_iterator_type index )
+      {
+        
+      }
+  
+      template<typename N>
+      void regular_root_table<N>::add_table_node( iterator_type position, unsigned short p )
+      { 
+        root_table_node n( p ); 
+        root_table_.insert( position, n );
+      }
+      
+      template <typename N>
+      void regular_root_table<N>::grow( unsigned short p ) 
+      {
+        root_table_node n( p ); 
+        root_table_.push_back( n );
+      }
+
+      // shrink_( ).      
+      template <typename N>
+      typename regular_root_table<N>::iterator_type regular_root_table<N>::shrink( iterator_type position  ) 
+      { 
+        return root_table_.erase( position );
+      }
+      
+      template<typename N>
+      void regular_root_table<N>::print( ) const
+      { 
+        std::cout << "size: " << size( ) << std::endl;     
+        std::cout << "-----------------" << std::endl ;
+        for( auto it = begin( ); it != end( ); ++it) {
+          std::cout << (*it).size( ) << " " ;
+          std::cout << "( " << (*it).p_ << " )" << " " ;
+        } 
+        std::cout << std::endl;        
+      }
+    }
+  }
+}

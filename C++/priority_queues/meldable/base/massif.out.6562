@@ -1,0 +1,803 @@
+desc: (none)
+cmd: ./lazy_q.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2862505
+mem_heap_B=42337
+mem_heap_extra_B=207
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=4894070
+mem_heap_B=68577
+mem_heap_extra_B=6783
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=8062366
+mem_heap_B=58713
+mem_heap_extra_B=143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=11547337
+mem_heap_B=93617
+mem_heap_extra_B=6879
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=13893220
+mem_heap_B=77881
+mem_heap_extra_B=2935
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=15537292
+mem_heap_B=93497
+mem_heap_extra_B=6879
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=17975504
+mem_heap_B=73265
+mem_heap_extra_B=1791
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=19209993
+mem_heap_B=214545
+mem_heap_extra_B=35927
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=21918220
+mem_heap_B=242121
+mem_heap_extra_B=54191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=24543507
+mem_heap_B=116089
+mem_heap_extra_B=143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=28099428
+mem_heap_B=242121
+mem_heap_extra_B=54191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=30727331
+mem_heap_B=116089
+mem_heap_extra_B=143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=33145526
+mem_heap_B=141625
+mem_heap_extra_B=6567
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=36004915
+mem_heap_B=219337
+mem_heap_extra_B=26071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=39454561
+mem_heap_B=305121
+mem_heap_extra_B=81191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=41405580
+mem_heap_B=194865
+mem_heap_extra_B=19887
+mem_stacks_B=0
+heap_tree=detailed
+n6: 194865 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 78688 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 78688 0x40199C: main (lazy_q.c++:56)
+ n1: 32768 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 32768 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 32768 0x40199C: main (lazy_q.c++:56)
+ n1: 32768 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 32768 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 32768 0x40199C: main (lazy_q.c++:56)
+ n1: 32768 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 32768 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 32768 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n2: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n1: 8192 0x403AA5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+   n1: 8192 0x403B6F: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+ n0: 1489 in 13 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=17
+#-----------
+time=44208269
+mem_heap_B=305121
+mem_heap_extra_B=81191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=45769233
+mem_heap_B=209753
+mem_heap_extra_B=23655
+mem_stacks_B=0
+heap_tree=detailed
+n6: 209753 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 93504 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 93504 0x40199C: main (lazy_q.c++:56)
+ n1: 32768 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 32768 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 32768 0x40199C: main (lazy_q.c++:56)
+ n1: 32768 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 32768 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 32768 0x40199C: main (lazy_q.c++:56)
+ n1: 32768 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 32768 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 32768 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n2: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n1: 8192 0x403AA5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+   n1: 8192 0x403B6F: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+ n0: 1561 in 13 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=19
+#-----------
+time=47850203
+mem_heap_B=126585
+mem_heap_extra_B=2807
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=50518867
+mem_heap_B=209689
+mem_heap_extra_B=23639
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=53120721
+mem_heap_B=173825
+mem_heap_extra_B=24903
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=54743930
+mem_heap_B=232449
+mem_heap_extra_B=32863
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=57346228
+mem_heap_B=126297
+mem_heap_extra_B=2735
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=59164946
+mem_heap_B=497913
+mem_heap_extra_B=121687
+mem_stacks_B=0
+heap_tree=detailed
+n7: 497913 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 162016 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 162016 0x40199C: main (lazy_q.c++:56)
+ n1: 121512 0x40415E: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 121512 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 65536 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 65536 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 65536 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n2: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n1: 8192 0x403AA5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+   n1: 8192 0x403B6F: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+ n0: 1393 in 12 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=25
+#-----------
+time=61766713
+mem_heap_B=346897
+mem_heap_extra_B=33375
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=63849150
+mem_heap_B=270121
+mem_heap_extra_B=14151
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=65447473
+mem_heap_B=214393
+mem_heap_extra_B=143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=68061339
+mem_heap_B=389697
+mem_heap_extra_B=49535
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=71431968
+mem_heap_B=260505
+mem_heap_extra_B=11711
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=74146246
+mem_heap_B=476585
+mem_heap_extra_B=107471
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=75956145
+mem_heap_B=364545
+mem_heap_extra_B=37807
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=78670861
+mem_heap_B=264761
+mem_heap_extra_B=12775
+mem_stacks_B=0
+heap_tree=detailed
+n6: 264761 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 65536 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 65536 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 65536 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 65536 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 50304 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 50304 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n2: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n1: 8192 0x403AA5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+   n1: 8192 0x403B6F: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+ n0: 1465 in 13 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=33
+#-----------
+time=81385021
+mem_heap_B=483585
+mem_heap_extra_B=112135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=83194248
+mem_heap_B=367897
+mem_heap_extra_B=38671
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=85003804
+mem_heap_B=302697
+mem_heap_extra_B=22279
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=87718097
+mem_heap_B=329833
+mem_heap_extra_B=49639
+mem_stacks_B=0
+heap_tree=detailed
+n7: 329833 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 65984 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 65984 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 65536 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 65536 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 65536 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 49488 0x40415E: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 49488 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n2: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n1: 8192 0x403AA5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+   n1: 8192 0x403B6F: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+ n0: 1369 in 12 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=37
+#-----------
+time=90432204
+mem_heap_B=371577
+mem_heap_extra_B=39591
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=92242123
+mem_heap_B=306473
+mem_heap_extra_B=23223
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=94051529
+mem_heap_B=236073
+mem_heap_extra_B=5623
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=96785977
+mem_heap_B=639649
+mem_heap_extra_B=182431
+mem_stacks_B=0
+heap_tree=peak
+n7: 639649 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 243008 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 243008 0x40199C: main (lazy_q.c++:56)
+ n1: 182256 0x40415E: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 182256 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 65536 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 65536 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 65536 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n1: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n0: 16384 in 2 places, all below massif's threshold (01.00%)
+ n0: 1393 in 12 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=41
+#-----------
+time=98595386
+mem_heap_B=514537
+mem_heap_extra_B=99159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=100404708
+mem_heap_B=424713
+mem_heap_extra_B=52839
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=103119074
+mem_heap_B=329009
+mem_heap_extra_B=28863
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=104928906
+mem_heap_B=261545
+mem_heap_extra_B=11991
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=108058567
+mem_heap_B=639633
+mem_heap_extra_B=182423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=109867850
+mem_heap_B=514529
+mem_heap_extra_B=99167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=111677705
+mem_heap_B=424649
+mem_heap_extra_B=52823
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=113487811
+mem_heap_B=361361
+mem_heap_extra_B=36991
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=115297637
+mem_heap_B=295953
+mem_heap_extra_B=20639
+mem_stacks_B=0
+heap_tree=detailed
+n6: 295953 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 81376 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 81376 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 65536 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 65536 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 65536 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n2: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n1: 8192 0x403AA5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+   n1: 8192 0x403B6F: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+ n0: 1585 in 13 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=50
+#-----------
+time=116532297
+mem_heap_B=248137
+mem_heap_extra_B=8599
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=117766813
+mem_heap_B=225505
+mem_heap_extra_B=4927
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=119323403
+mem_heap_B=639633
+mem_heap_extra_B=182423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=120557940
+mem_heap_B=553761
+mem_heap_extra_B=125295
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=121792443
+mem_heap_B=468793
+mem_heap_extra_B=68663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=123027137
+mem_heap_B=421641
+mem_heap_extra_B=52071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=124262169
+mem_heap_B=378121
+mem_heap_extra_B=41191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=125497137
+mem_heap_B=334097
+mem_heap_extra_B=30175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=126732327
+mem_heap_B=288945
+mem_heap_extra_B=18847
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=127966840
+mem_heap_B=240297
+mem_heap_extra_B=6679
+mem_stacks_B=0
+heap_tree=detailed
+n6: 240297 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 65536 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 65536 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 65536 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 65536 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 25792 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 25792 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n2: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n1: 8192 0x403AA5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+   n1: 8192 0x403B6F: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+ n0: 1513 in 13 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=60
+#-----------
+time=129201375
+mem_heap_B=316369
+mem_heap_extra_B=43863
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=130569748
+mem_heap_B=639633
+mem_heap_extra_B=182423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=131804285
+mem_heap_B=553761
+mem_heap_extra_B=125295
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=133038788
+mem_heap_B=468793
+mem_heap_extra_B=68663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=134273946
+mem_heap_B=421721
+mem_heap_extra_B=52071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=135509005
+mem_heap_B=378545
+mem_heap_extra_B=41247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=136743840
+mem_heap_B=334865
+mem_heap_extra_B=30367
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=137978338
+mem_heap_B=289625
+mem_heap_extra_B=19007
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=139213053
+mem_heap_B=240961
+mem_heap_extra_B=6815
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=140447569
+mem_heap_B=308305
+mem_heap_extra_B=40407
+mem_stacks_B=0
+heap_tree=detailed
+n7: 308305 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 65536 0x4022F9: void std::vector<KHJ::thesis::heap_node::heap_awh_node<long long>*, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long>*> >::_M_emplace_back_aux<KHJ::thesis::heap_node::heap_awh_node<long long>*>(KHJ::thesis::heap_node::heap_awh_node<long long>*&&) (new_allocator.h:104)
+  n1: 65536 0x4041AF: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4020D9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long const&>(long long const&) (new_allocator.h:104)
+  n1: 65536 0x403DF5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (stl_vector.h:923)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 65536 0x4021E9: void std::vector<long long, std::allocator<long long> >::_M_emplace_back_aux<long long>(long long&&) (new_allocator.h:104)
+  n1: 65536 0x403E0A: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (vector.tcc:101)
+   n0: 65536 0x40199C: main (lazy_q.c++:56)
+ n1: 53696 0x40410B: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 53696 0x40199C: main (lazy_q.c++:56)
+ n1: 40248 0x40415E: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (new_allocator.h:104)
+  n0: 40248 0x40199C: main (lazy_q.c++:56)
+ n1: 16384 0x4EE9BC6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/libstdc++.so.6.0.20)
+  n2: 16384 0x4EEC1A0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/libstdc++.so.6.0.20)
+   n1: 8192 0x403AA5: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+   n1: 8192 0x403B6F: KHJ::thesis::benchmark::bench<KHJ::thesis::heap_node::heap_awh_node<long long>, long long, KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > > >::decrease_key(KHJ::thesis::priority_queue::meldable_priority_queue<long long, counting_comparator<long long>, std::allocator<KHJ::thesis::heap_node::heap_awh_node<long long> >, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::queue::lazy_binary_queue<long long, counting_comparator<long long>, KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_registry::lazy_root_registry_alt<KHJ::thesis::heap_node::heap_awh_node<long long>, KHJ::thesis::modifier::node_awh_modifier<long long, KHJ::thesis::heap_node::heap_awh_node<long long>, counting_comparator<long long> >, KHJ::thesis::root_list::lazy_root_list_alt<KHJ::thesis::heap_node::heap_awh_node<long long> > > > >&) (fstream:283)
+    n0: 8192 0x40199C: main (lazy_q.c++:56)
+ n0: 1369 in 12 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=70
+#-----------
+time=141832647
+mem_heap_B=639633
+mem_heap_extra_B=182423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=143067184
+mem_heap_B=553761
+mem_heap_extra_B=125295
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=144301687
+mem_heap_B=468793
+mem_heap_extra_B=68663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=145536197
+mem_heap_B=421705
+mem_heap_extra_B=52071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=146770727
+mem_heap_B=378657
+mem_heap_extra_B=41239
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=148005512
+mem_heap_B=335001
+mem_heap_extra_B=30375
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=149240266
+mem_heap_B=289577
+mem_heap_extra_B=18999
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=150475192
+mem_heap_B=240929
+mem_heap_extra_B=6847
+mem_stacks_B=0
+heap_tree=empty

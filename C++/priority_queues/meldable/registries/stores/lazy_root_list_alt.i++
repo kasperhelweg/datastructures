@@ -1,0 +1,114 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace root_list {
+      
+      /**
+       * Constructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      lazy_root_list_alt<N>::lazy_root_list_alt( ) : top( nullptr ), size_( 0 )
+      { }
+
+      /**
+       * DeConstructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      lazy_root_list_alt<N>::~lazy_root_list_alt( ) 
+      { }
+
+      /**
+       * push_front( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      void lazy_root_list_alt<N>::inject( N* S ) 
+      { 
+        root_list_.push_front( S );
+      }
+
+      /**
+       * pop_front( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      N* lazy_root_list_alt<N>::eject( ) 
+      { 
+        N* S = root_list_.front( ); 
+        root_list_.pop_front( ); 
+        return S;
+      }
+
+               
+      template<typename N>
+      void lazy_root_list_alt<N>::insert_root( iterator_type j, N* S ) 
+      { 
+        root_list_.insert( j, S  );
+      
+      }
+
+      template<typename N>
+      N* lazy_root_list_alt<N>::remove_root( iterator_type j ) 
+      { 
+        N* S = (*j); root_list_.erase( j );
+        return S;
+      }
+
+      template <typename N>
+      void lazy_root_list_alt<N>::concatenate( lazy_root_list_alt& other ) 
+      { 
+        root_list_.splice(root_list_.end( ), other.root_list_ );        
+      }
+
+      template <typename N>
+      int lazy_root_list_alt<N>::size( ) const
+      { 
+        return root_list_.size( );
+      }
+
+      template <typename N>
+      bool lazy_root_list_alt<N>::empty( ) const
+      { 
+        return root_list_.empty( ); 
+      }
+
+      template <typename N>
+      void lazy_root_list_alt<N>::clear( ) 
+      { 
+        root_list_.clear( ); 
+      }
+
+
+      template <typename N>
+      bool lazy_root_list_alt<N>::one_heap( ) const
+      { 
+        return root_list_.size( ) == 1;
+      }
+      
+      template<typename N>
+      void lazy_root_list_alt<N>::print( ) const
+      { 
+        std::cout << "rootlist size: " << size( ) << std::endl;     
+        std::cout << "-----------------" << std::endl ;
+        std::cout << "< ";
+        for( auto it = begin( ); it != end( ); ++it) {
+          std::cout << (*it)->height( ) << " ";
+        } 
+        std::cout << ">" << std::endl;     
+      }
+    }
+  }
+}

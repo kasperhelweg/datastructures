@@ -1,0 +1,105 @@
+namespace KHJ  {
+  namespace thesis  {
+    namespace root_list {
+      
+      /**
+       * Constructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      lazy_root_list<N>::lazy_root_list( ) : root_list_( root_list_type( ) )
+      { }
+
+      /**
+       * DeConstructor.
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      lazy_root_list<N>::~lazy_root_list( ) 
+      { }
+
+      /**
+       * push_front( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      void lazy_root_list<N>::inject( N* S ) 
+      { 
+        root_list_.push_back( S );
+      }
+
+      /**
+       * pop_front( )
+       * 
+       * complexity is (probably) O(1)
+       * @author KHJ
+       *
+       */
+      template<typename N>
+      N* lazy_root_list<N>::eject( ) 
+      { 
+        N* S = root_list_.back( ); 
+        root_list_.pop_back( ); 
+        return S;
+      }
+
+               
+      template<typename N>
+      void lazy_root_list<N>::insert_root( iterator_type j, N* S ) 
+      { 
+      
+      }
+
+      template<typename N>
+      N* lazy_root_list<N>::remove_root( iterator_type j ) 
+      { 
+      
+      }
+
+      template <typename N>
+      void lazy_root_list<N>::concatenate( root_list_type ) 
+      { 
+        
+      }
+
+      template <typename N>
+      int lazy_root_list<N>::size( ) const
+      { 
+        return root_list_.size( );
+      }
+
+      template <typename N>
+      bool lazy_root_list<N>::empty( ) const
+      { 
+        return root_list_.empty( ); 
+      }
+
+      template <typename N>
+      void lazy_root_list<N>::clear( ) 
+      { 
+        root_list_.clear( ); 
+      }
+      
+      template<typename N>
+      void lazy_root_list<N>::print( ) const
+      { 
+        std::cout << "rootlist size: " << size( ) << std::endl;     
+        std::cout << "-----------------" << std::endl ;
+        std::cout << "< ";
+        for( auto it = begin( ); it != end( ); ++it) {
+          std::cout << (*it)->height( ) << " ";
+        } 
+        std::cout << ">" << std::endl;     
+      }
+    }
+  }
+}
